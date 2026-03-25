@@ -677,3 +677,256 @@
   "message": "Event 'testCompleted' reported!\nSession ID: 20260325184944,\nSession Dir: /home/soporte/Desarrollos/vscode/edupulse/edupulse_back/.github/java-upgrade/20260325184944"
 }}).
 2026-03-25T19:01:15.299Z [INFO] ----------------------invoked report_event----------------------
+2026-03-25T19:01:43.933Z [INFO] ---------------------prepare report_event----------------------
+2026-03-25T19:01:43.933Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "details": {
+    "commitId": "2c6c0a2",
+    "stepNumber": 4,
+    "stepTitle": "Final Validation"
+  },
+  "event": "upgradeValidationCompleted",
+  "phase": "execute",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T19:01:43.933Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T19:01:43.933Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-25T19:01:43.933Z [INFO] ----------------------prepared report_event----------------------
+2026-03-25T19:01:44.063Z [INFO] ----------------------invoke report_event----------------------
+2026-03-25T19:01:44.063Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "details": {
+    "commitId": "2c6c0a2",
+    "stepNumber": 4,
+    "stepTitle": "Final Validation"
+  },
+  "event": "upgradeValidationCompleted",
+  "phase": "execute",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T19:01:44.063Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T19:01:44.063Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'upgradeValidationCompleted' reported!\nSession ID: 20260325184944,\nSession Dir: /home/soporte/Desarrollos/vscode/edupulse/edupulse_back/.github/java-upgrade/20260325184944"
+}}).
+2026-03-25T19:01:44.063Z [INFO] ----------------------invoked report_event----------------------
+2026-03-25T19:01:48.169Z [INFO] ---------------------prepare report_event----------------------
+2026-03-25T19:01:48.169Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "event": "planExecutionCompleted",
+  "phase": "execute",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T19:01:48.169Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T19:01:48.169Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-25T19:01:48.169Z [INFO] ----------------------prepared report_event----------------------
+2026-03-25T19:01:48.280Z [INFO] ----------------------invoke report_event----------------------
+2026-03-25T19:01:48.280Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "event": "planExecutionCompleted",
+  "phase": "execute",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T19:01:48.280Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T19:01:48.284Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planExecutionCompleted' reported!\nSession ID: 20260325184944,\nSession Dir: /home/soporte/Desarrollos/vscode/edupulse/edupulse_back/.github/java-upgrade/20260325184944"
+}}).
+2026-03-25T19:01:48.284Z [INFO] ----------------------invoked report_event----------------------
+2026-03-25T19:02:34.175Z [INFO] ---------------------prepare validate_cves_for_java----------------------
+2026-03-25T19:02:34.175Z [INFO] [Tool.prepareInvocation]({name: validate_cves_for_java, input: {
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.5",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ]
+}}).
+2026-03-25T19:02:34.176Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T19:02:34.176Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Validate CVEs"
+}}).
+2026-03-25T19:02:34.176Z [INFO] ----------------------prepared validate_cves_for_java----------------------
+2026-03-25T19:02:34.294Z [INFO] ----------------------invoke validate_cves_for_java----------------------
+2026-03-25T19:02:34.295Z [INFO] [Tool.invoke]({name: validate_cves_for_java, input: {
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.5",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ]
+}}).
+2026-03-25T19:02:34.295Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T19:02:34.295Z [INFO] Project /home/soporte/Desarrollos/vscode/edupulse/edupulse_back is a maven project, try to get java version from pom.xml
+2026-03-25T19:02:34.295Z [INFO] Getting CVEs for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.5,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:02:34.295Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-data-jpa:3.4.4
+  - org.springframework.boot:spring-boot-starter-security:3.4.4
+  - org.springframework.boot:spring-boot-starter-validation:3.4.4
+  - org.springframework.boot:spring-boot-starter-web:3.4.4
+  - io.jsonwebtoken:jjwt-api:0.12.6
+  - io.jsonwebtoken:jjwt-impl:0.12.6
+  - io.jsonwebtoken:jjwt-jackson:0.12.6
+  - org.postgresql:postgresql:42.7.5
+  - org.projectlombok:lombok:1.18.36
+  - org.springframework.boot:spring-boot-starter-test:3.4.4
+  - org.springframework.security:spring-security-test:6.4.4
+  - com.h2database:h2:2.3.232...
+2026-03-25T19:02:34.295Z [INFO] getting gitHub access token...
+2026-03-25T19:02:34.296Z [INFO] Project java version: 21
+2026-03-25T19:02:34.297Z [INFO] Maven project detected.
+2026-03-25T19:02:34.297Z [INFO] Build tool type: mvnw
+2026-03-25T19:02:34.315Z [INFO] JDK: {
+  "name": "java",
+  "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+  "version": "21"
+}
+2026-03-25T19:02:34.315Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": ".",
+  "version": ""
+}
+2026-03-25T19:02:34.315Z [INFO] Project config: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": ""
+  },
+  "jdk": {
+    "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "edupulse_back",
+  "dir": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}
+2026-03-25T19:02:34.316Z [INFO] [Environment] Running command (Java undefined): mvnw dependency:tree -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:02:34.339Z [ERROR] [MavenBuildTool] Failed to get dependencies from dependency tree: Error: Failed to run command: "mvnw dependency:tree -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:02:34.339Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:02:34.364Z [ERROR] [MavenBuildTool] Failed to get dependencies from effective pom: Error: Failed to run command: "mvnw help:effective-pom -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:02:34.364Z [INFO] [MavenBuildTool] Getting Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back from pom.xml
+2026-03-25T19:02:34.364Z [INFO] [MavenBuildTool] Searching for pom.xml files in /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:02:34.365Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:02:34.365Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:02:34.365Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-631dec0c-f9f3-4842-a999-35ae666a79b2.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:02:34.384Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-631dec0c-f9f3-4842-a999-35ae666a79b2.log'
+2026-03-25T19:02:34.384Z [INFO] [MavenBuildTool] Found pom.xml files: 
+2026-03-25T19:02:34.385Z [INFO] [Environment] Running command (Java undefined): mvnw help:evaluate -Dexpression=project.properties -q -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:02:34.405Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:02:34.427Z [ERROR] [MavenBuildTool] Failed to get Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:02:34.465Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:02:34.465Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:02:34.466Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-4e4620cb-85a4-4a79-aff4-3ad90ca7df61.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:02:34.487Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-4e4620cb-85a4-4a79-aff4-3ad90ca7df61.log'
+2026-03-25T19:02:40.963Z [INFO] Processing batch 1/1, size: 12
+2026-03-25T19:02:40.964Z [INFO] Proxy configuration: HTTPS_PROXY=(not set), HTTP_PROXY=(not set), NO_PROXY=(not set), NODE_EXTRA_CA_CERTS=(not set), vscode http.proxy=(not set), hasProxy=false
+2026-03-25T19:02:40.964Z [INFO] No proxy detected, using direct connection.
+2026-03-25T19:02:40.967Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+  "org.springframework.boot:spring-boot-starter-security:3.4.4",
+  "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+  "org.springframework.boot:spring-boot-starter-web:3.4.4",
+  "io.jsonwebtoken:jjwt-api:0.12.6",
+  "io.jsonwebtoken:jjwt-impl:0.12.6",
+  "io.jsonwebtoken:jjwt-jackson:0.12.6",
+  "org.postgresql:postgresql:42.7.5",
+  "org.projectlombok:lombok:1.18.36",
+  "org.springframework.boot:spring-boot-starter-test:3.4.4",
+  "org.springframework.security:spring-security-test:6.4.4",
+  "com.h2database:h2:2.3.232"
+]
+2026-03-25T19:02:41.561Z [INFO] Fetched 1 total advisories across all pages
+2026-03-25T19:02:41.563Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-03-25T19:02:41.563Z [INFO] done getting 1 CVEs for 12 dependencies
+2026-03-25T19:02:41.564Z [INFO] calculating patched version by dep...
+2026-03-25T19:02:41.575Z [INFO] CVE CVE-2025-49146 for org.postgresql:postgresql:42.7.5: patched version 42.7.7
+2026-03-25T19:02:41.575Z [INFO] finished getting CVEs for dependencies.
+2026-03-25T19:02:41.575Z [INFO] Found 1 dependencies with known CVEs
+2026-03-25T19:02:41.577Z [INFO] CVE issues found:
+- Dependency `org.postgresql:postgresql:42.7.5` has **1** known CVEs need to be fixed:
+  - [CVE-2025-49146](https://github.com/advisories/GHSA-hq9p-pm7w-8p54): pgjdbc Client Allows Fallback to Insecure Authentication Despite channelBinding=require Configuration
+    - **Severity**: **HIGH**
+    - **Details**: ### Impact
+      When the PostgreSQL JDBC driver is configured with channel binding set to `required` (default value is `prefer`), the driver would incorrectly allow connections to proceed with authentication methods that do not support channel binding (such as password, MD5, GSS, or SSPI  authentication). This could allow a man-in-the-middle attacker to intercept connections that users believed were protected by channel binding requirements.
+      
+      ### Patches
+      TBD
+      
+      ### Workarounds
+      
+      Configure `sslMode=verify-full` to prevent MITM attacks.
+      
+      ### References
+      
+      * https://www.postgresql.org/docs/current/sasl-authentication.html#SASL-SCRAM-SHA-256
+      * https://datatracker.ietf.org/doc/html/rfc7677
+      * https://datatracker.ietf.org/doc/html/rfc5802
+2026-03-25T19:02:41.578Z [INFO] [Tool.invoke]({result: {
+  "message": "The following dependencies have known CVEs that need to be fixed:\n- Dependency `org.postgresql:postgresql:42.7.5` has **1** known CVEs need to be fixed:\n  - [CVE-2025-49146](https://github.com/advisories/GHSA-hq9p-pm7w-8p54): pgjdbc Client Allows Fallback to Insecure Authentication Despite channelBinding=require Configuration\n    - **Severity**: **HIGH**\n    - **Details**: ### Impact\n      When the PostgreSQL JDBC driver is configured with channel binding set to `required` (default value is `prefer`), the driver would incorrectly allow connections to proceed with authentication methods that do not support channel binding (such as password, MD5, GSS, or SSPI  authentication). This could allow a man-in-the-middle attacker to intercept connections that users believed were protected by channel binding requirements.\n      \n      ### Patches\n      TBD\n      \n      ### Workarounds\n      \n      Configure `sslMode=verify-full` to prevent MITM attacks.\n      \n      ### References\n      \n      * https://www.postgresql.org/docs/current/sasl-authentication.html#SASL-SCRAM-SHA-256\n      * https://datatracker.ietf.org/doc/html/rfc7677\n      * https://datatracker.ietf.org/doc/html/rfc5802",
+  "result": [
+    {
+      "cves": [
+        {
+          "id": "CVE-2025-49146",
+          "ghsa_id": "GHSA-hq9p-pm7w-8p54",
+          "severity": "high",
+          "summary": "pgjdbc Client Allows Fallback to Insecure Authentication Despite channelBinding=require Configuration",
+          "description": "### Impact\nWhen the PostgreSQL JDBC driver is configured with channel binding set to `required` (default value is `prefer`), the driver would incorrectly allow connections to proceed with authentication methods that do not support channel binding (such as password, MD5, GSS, or SSPI  authentication). This could allow a man-in-the-middle attacker to intercept connections that users believed were protected by channel binding requirements.\n\n### Patches\nTBD\n\n### Workarounds\n\nConfigure `sslMode=verify-full` to prevent MITM attacks.\n\n### References\n\n* https://www.postgresql.org/docs/current/sasl-authentication.html#SASL-SCRAM-SHA-256\n* https://datatracker.ietf.org/doc/html/rfc7677\n* https://datatracker.ietf.org/doc/html/rfc5802",
+          "html_url": "https://github.com/advisories/GHSA-hq9p-pm7w-8p54",
+          "affectedDeps": [
+            {
+              "name": "org.postgresql:postgresql",
+              "vulVersions": ">= 42.7.4, < 42.7.7",
+              "patchedVersion": "42.7.7"
+            }
+          ]
+        }
+      ],
+      "dep": "org.postgresql:postgresql:42.7.5",
+      "name": "org.postgresql:postgresql",
+      "version": "42.7.5",
+      "semver": "42.7.5",
+      "unfixableCves": [],
+      "patchedVersion": "42.7.7"
+    }
+  ],
+  "telemetry": {
+    "cve.high": 1,
+    "cves": "{\"CVE-2025-49146\":1}"
+  }
+}}).
+2026-03-25T19:02:41.578Z [INFO] ----------------------invoked validate_cves_for_java----------------------
