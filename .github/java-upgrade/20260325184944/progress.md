@@ -49,18 +49,44 @@
 ---
 
 - **Step 3: Upgrade Java 17 → 21**
-  - **Status**: 🔘 Not Started
-  - **Changes Made**: —
+  - **Status**: ✅ Completed
+  - **Changes Made**:
+    - `pom.xml`: `<java.version>17</java.version>` → `<java.version>21</java.version>`
+  - **Review Code Changes**:
+    - Sufficiency: ✅ All required changes present — java.version updated to 21
+    - Necessity: ✅ Only the required change made
+      - Functional Behavior: ✅ Preserved — no business logic affected
+      - Security Controls: ✅ Preserved — no security config touched
+  - **Verification**:
+    - Command: `JAVA_HOME=/home/soporte/.jdk/jdk-21.0.8 ./mvnw clean test-compile`
+    - JDK: /home/soporte/.jdk/jdk-21.0.8/bin
+    - Build tool: ./mvnw (wrapper 3.9.14)
+    - Result: ✅ Compilation SUCCESS (javac release 21, 46 source + 1 test file)
+    - Notes: No compilation errors or warnings introduced
   - **Deferred Work**: None
-  - **Commit**: —
+  - **Commit**: 8359d29 - Step 3: Upgrade Java 17 → 21 - Compile: SUCCESS
 
 ---
 
 - **Step 4: Final Validation**
-  - **Status**: 🔘 Not Started
-  - **Changes Made**: —
+  - **Status**: ✅ Completed
+  - **Changes Made**:
+    - Verified `<java.version>21</java.version>` in pom.xml
+    - No TODOs to resolve
+    - Full test suite ran: 1/1 passed with Java 21
+  - **Review Code Changes**:
+    - Sufficiency: ✅ All upgrade goals verified  
+    - Necessity: ✅ No additional changes required
+      - Functional Behavior: ✅ Preserved — identical to baseline behavior
+      - Security Controls: ✅ Preserved — no security configs changed
+  - **Verification**:
+    - Command: `JAVA_HOME=/home/soporte/.jdk/jdk-21.0.8 ./mvnw clean test`
+    - JDK: /home/soporte/.jdk/jdk-21.0.8/bin
+    - Build tool: ./mvnw (wrapper 3.9.14)
+    - Result: ✅ Compilation SUCCESS (javac release 21) | ✅ Tests: 1/1 passed (100%)
+    - Notes: Matches baseline (1/1 pass rate achieved)
   - **Deferred Work**: None
-  - **Commit**: —
+  - **Commit**: (see below)
 
 ---
 

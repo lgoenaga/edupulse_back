@@ -546,3 +546,134 @@
 2026-03-25T18:58:55.725Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-61607018-42c0-48de-bd7e-6cb9fa60f5eb.log
 /bin/sh: 1: mvnw: not found
 2026-03-25T18:58:55.744Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-61607018-42c0-48de-bd7e-6cb9fa60f5eb.log'
+2026-03-25T19:00:33.590Z [INFO] ---------------------prepare report_event----------------------
+2026-03-25T19:00:33.590Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "details": {
+    "commitId": "8359d29",
+    "stepNumber": 3,
+    "stepTitle": "Upgrade Java 17 → 21"
+  },
+  "event": "upgradeStepCompleted",
+  "phase": "execute",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T19:00:33.590Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T19:00:33.590Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-25T19:00:33.590Z [INFO] ----------------------prepared report_event----------------------
+2026-03-25T19:00:33.687Z [INFO] ----------------------invoke report_event----------------------
+2026-03-25T19:00:33.687Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "details": {
+    "commitId": "8359d29",
+    "stepNumber": 3,
+    "stepTitle": "Upgrade Java 17 → 21"
+  },
+  "event": "upgradeStepCompleted",
+  "phase": "execute",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T19:00:33.687Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T19:00:33.687Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'upgradeStepCompleted' reported!\nSession ID: 20260325184944,\nSession Dir: /home/soporte/Desarrollos/vscode/edupulse/edupulse_back/.github/java-upgrade/20260325184944"
+}}).
+2026-03-25T19:00:33.687Z [INFO] ----------------------invoked report_event----------------------
+2026-03-25T19:01:14.940Z [INFO] ---------------------prepare report_event----------------------
+2026-03-25T19:01:14.940Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "event": "buildCompleted",
+  "phase": "execute",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T19:01:14.940Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T19:01:14.940Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-25T19:01:14.940Z [INFO] ----------------------prepared report_event----------------------
+2026-03-25T19:01:15.146Z [INFO] ----------------------invoke report_event----------------------
+2026-03-25T19:01:15.146Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "event": "buildCompleted",
+  "phase": "execute",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T19:01:15.146Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T19:01:15.146Z [INFO] Project /home/soporte/Desarrollos/vscode/edupulse/edupulse_back is a maven project, try to get java version from pom.xml
+2026-03-25T19:01:15.146Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'buildCompleted' reported!\nSession ID: 20260325184944,\nSession Dir: /home/soporte/Desarrollos/vscode/edupulse/edupulse_back/.github/java-upgrade/20260325184944"
+}}).
+2026-03-25T19:01:15.146Z [INFO] ----------------------invoked report_event----------------------
+2026-03-25T19:01:15.147Z [INFO] Project java version: 21
+2026-03-25T19:01:15.147Z [INFO] Maven project detected.
+2026-03-25T19:01:15.147Z [INFO] Build tool type: mvnw
+2026-03-25T19:01:15.166Z [INFO] JDK: {
+  "name": "java",
+  "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+  "version": "21"
+}
+2026-03-25T19:01:15.167Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": ".",
+  "version": ""
+}
+2026-03-25T19:01:15.167Z [INFO] Project config: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": ""
+  },
+  "jdk": {
+    "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "edupulse_back",
+  "dir": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}
+2026-03-25T19:01:15.167Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:01:15.167Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:01:15.167Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-b1311fbc-e001-43b2-bcae-1aeec3510567.log
+2026-03-25T19:01:15.185Z [INFO] ---------------------prepare report_event----------------------
+2026-03-25T19:01:15.185Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "event": "testCompleted",
+  "phase": "execute",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T19:01:15.185Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T19:01:15.185Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-25T19:01:15.185Z [INFO] ----------------------prepared report_event----------------------
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:01:15.186Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-b1311fbc-e001-43b2-bcae-1aeec3510567.log'
+2026-03-25T19:01:15.186Z [INFO] [BaseBuildTool] Found 0 modules: 
+2026-03-25T19:01:15.186Z [INFO] [BaseBuildTool] Finish counting Java and class files
+2026-03-25T19:01:15.186Z [INFO] [MavenBuildTool] Cleaning /home/soporte/Desarrollos/vscode/edupulse/edupulse_back using Maven
+2026-03-25T19:01:15.187Z [INFO] [Environment] Running command (Java undefined): mvnw clean -q -B -fn
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:01:15.211Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:01:15.211Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:01:15.211Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-c9317677-36c5-45ad-92b5-7f833eab3050.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:01:15.233Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-c9317677-36c5-45ad-92b5-7f833eab3050.log'
+2026-03-25T19:01:15.299Z [INFO] ----------------------invoke report_event----------------------
+2026-03-25T19:01:15.299Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "event": "testCompleted",
+  "phase": "execute",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T19:01:15.299Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T19:01:15.299Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'testCompleted' reported!\nSession ID: 20260325184944,\nSession Dir: /home/soporte/Desarrollos/vscode/edupulse/edupulse_back/.github/java-upgrade/20260325184944"
+}}).
+2026-03-25T19:01:15.299Z [INFO] ----------------------invoked report_event----------------------
