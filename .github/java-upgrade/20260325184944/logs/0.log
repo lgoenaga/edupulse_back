@@ -930,3 +930,2428 @@
   }
 }}).
 2026-03-25T19:02:41.578Z [INFO] ----------------------invoked validate_cves_for_java----------------------
+2026-03-25T19:05:05.365Z [INFO] ---------------------prepare report_event----------------------
+2026-03-25T19:05:05.365Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "event": "summaryGenerated",
+  "message": "Successfully upgraded edupulse-back from Java 17 to Java 21 LTS. Single-property change in pom.xml; all 1/1 tests pass with no regressions. 1 High CVE found in postgresql 42.7.5 with recommended workaround documented.",
+  "phase": "summarize",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T19:05:05.365Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T19:05:05.366Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-25T19:05:05.366Z [INFO] ----------------------prepared report_event----------------------
+2026-03-25T19:05:05.508Z [INFO] ----------------------invoke report_event----------------------
+2026-03-25T19:05:05.508Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "event": "summaryGenerated",
+  "message": "Successfully upgraded edupulse-back from Java 17 to Java 21 LTS. Single-property change in pom.xml; all 1/1 tests pass with no regressions. 1 High CVE found in postgresql 42.7.5 with recommended workaround documented.",
+  "phase": "summarize",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T19:05:05.508Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T19:05:05.509Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'summaryGenerated' reported!\nSession ID: 20260325184944,\nSession Dir: /home/soporte/Desarrollos/vscode/edupulse/edupulse_back/.github/java-upgrade/20260325184944"
+}}).
+2026-03-25T19:05:05.509Z [INFO] ----------------------invoked report_event----------------------
+2026-03-25T19:07:40.979Z [INFO] ---------------------prepare validate_cves_for_java----------------------
+2026-03-25T19:07:40.979Z [INFO] [Tool.prepareInvocation]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:07:40.979Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T19:07:40.979Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Validate CVEs"
+}}).
+2026-03-25T19:07:40.979Z [INFO] ----------------------prepared validate_cves_for_java----------------------
+2026-03-25T19:07:41.070Z [INFO] ----------------------invoke validate_cves_for_java----------------------
+2026-03-25T19:07:41.070Z [INFO] [Tool.invoke]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:07:41.070Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T19:07:41.070Z [INFO] Project /home/soporte/Desarrollos/vscode/edupulse/edupulse_back is a maven project, try to get java version from pom.xml
+2026-03-25T19:07:41.070Z [INFO] Getting CVEs for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:07:41.070Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-data-jpa:3.4.4
+  - org.springframework.boot:spring-boot-starter-security:3.4.4
+  - org.springframework.boot:spring-boot-starter-validation:3.4.4
+  - org.springframework.boot:spring-boot-starter-web:3.4.4
+  - io.jsonwebtoken:jjwt-api:0.12.6
+  - io.jsonwebtoken:jjwt-impl:0.12.6
+  - io.jsonwebtoken:jjwt-jackson:0.12.6
+  - org.postgresql:postgresql:42.7.10
+  - org.projectlombok:lombok:1.18.36
+  - org.springframework.boot:spring-boot-starter-test:3.4.4
+  - org.springframework.security:spring-security-test:6.4.4
+  - com.h2database:h2:2.3.232...
+2026-03-25T19:07:41.070Z [INFO] getting gitHub access token...
+2026-03-25T19:07:41.071Z [INFO] Project java version: 21
+2026-03-25T19:07:41.071Z [INFO] Maven project detected.
+2026-03-25T19:07:41.071Z [INFO] Build tool type: mvnw
+2026-03-25T19:07:41.073Z [INFO] Processing batch 1/1, size: 12
+2026-03-25T19:07:41.073Z [INFO] Proxy configuration: HTTPS_PROXY=(not set), HTTP_PROXY=(not set), NO_PROXY=(not set), NODE_EXTRA_CA_CERTS=(not set), vscode http.proxy=(not set), hasProxy=false
+2026-03-25T19:07:41.073Z [INFO] No proxy detected, using direct connection.
+2026-03-25T19:07:41.073Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+  "org.springframework.boot:spring-boot-starter-security:3.4.4",
+  "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+  "org.springframework.boot:spring-boot-starter-web:3.4.4",
+  "io.jsonwebtoken:jjwt-api:0.12.6",
+  "io.jsonwebtoken:jjwt-impl:0.12.6",
+  "io.jsonwebtoken:jjwt-jackson:0.12.6",
+  "org.postgresql:postgresql:42.7.10",
+  "org.projectlombok:lombok:1.18.36",
+  "org.springframework.boot:spring-boot-starter-test:3.4.4",
+  "org.springframework.security:spring-security-test:6.4.4",
+  "com.h2database:h2:2.3.232"
+]
+2026-03-25T19:07:41.093Z [INFO] JDK: {
+  "name": "java",
+  "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+  "version": "21"
+}
+2026-03-25T19:07:41.093Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": ".",
+  "version": ""
+}
+2026-03-25T19:07:41.093Z [INFO] Project config: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": ""
+  },
+  "jdk": {
+    "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "edupulse_back",
+  "dir": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}
+2026-03-25T19:07:41.094Z [INFO] [Environment] Running command (Java undefined): mvnw dependency:tree -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:07:41.112Z [ERROR] [MavenBuildTool] Failed to get dependencies from dependency tree: Error: Failed to run command: "mvnw dependency:tree -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:07:41.112Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:07:41.132Z [ERROR] [MavenBuildTool] Failed to get dependencies from effective pom: Error: Failed to run command: "mvnw help:effective-pom -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:07:41.133Z [INFO] [MavenBuildTool] Getting Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back from pom.xml
+2026-03-25T19:07:41.133Z [INFO] [MavenBuildTool] Searching for pom.xml files in /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:07:41.133Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:07:41.133Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:07:41.133Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-2af977b0-83e0-4860-a541-8a0771799f8c.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:07:41.155Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-2af977b0-83e0-4860-a541-8a0771799f8c.log'
+2026-03-25T19:07:41.155Z [INFO] [MavenBuildTool] Found pom.xml files: 
+2026-03-25T19:07:41.156Z [INFO] [Environment] Running command (Java undefined): mvnw help:evaluate -Dexpression=project.properties -q -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:07:41.175Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:07:41.195Z [ERROR] [MavenBuildTool] Failed to get Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:07:41.235Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:07:41.235Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:07:41.236Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-fb272126-b40c-4806-a4aa-3ce38f74721e.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:07:41.253Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-fb272126-b40c-4806-a4aa-3ce38f74721e.log'
+2026-03-25T19:07:41.482Z [INFO] Fetched 0 total advisories across all pages
+2026-03-25T19:07:41.482Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-03-25T19:07:41.482Z [INFO] done getting 0 CVEs for 12 dependencies
+2026-03-25T19:07:41.482Z [INFO] calculating patched version by dep...
+2026-03-25T19:07:41.483Z [INFO] finished getting CVEs for dependencies.
+2026-03-25T19:07:41.483Z [INFO] Found 0 dependencies with known CVEs
+2026-03-25T19:07:41.484Z [INFO] No known CVEs that need to be fixed are found for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:07:41.484Z [INFO] [Tool.invoke]({result: {
+  "message": "No known CVEs that need to be fixed are found for the given dependencies."
+}}).
+2026-03-25T19:07:41.484Z [INFO] ----------------------invoked validate_cves_for_java----------------------
+2026-03-25T19:08:29.457Z [INFO] ---------------------prepare validate_cves_for_java----------------------
+2026-03-25T19:08:29.457Z [INFO] [Tool.prepareInvocation]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:08:29.457Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T19:08:29.457Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Validate CVEs"
+}}).
+2026-03-25T19:08:29.457Z [INFO] ----------------------prepared validate_cves_for_java----------------------
+2026-03-25T19:08:29.539Z [INFO] ----------------------invoke validate_cves_for_java----------------------
+2026-03-25T19:08:29.539Z [INFO] [Tool.invoke]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:08:29.539Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T19:08:29.539Z [INFO] Project /home/soporte/Desarrollos/vscode/edupulse/edupulse_back is a maven project, try to get java version from pom.xml
+2026-03-25T19:08:29.539Z [INFO] Getting CVEs for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:08:29.539Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-data-jpa:3.4.4
+  - org.springframework.boot:spring-boot-starter-security:3.4.4
+  - org.springframework.boot:spring-boot-starter-validation:3.4.4
+  - org.springframework.boot:spring-boot-starter-web:3.4.4
+  - io.jsonwebtoken:jjwt-api:0.12.6
+  - io.jsonwebtoken:jjwt-impl:0.12.6
+  - io.jsonwebtoken:jjwt-jackson:0.12.6
+  - org.postgresql:postgresql:42.7.10
+  - org.projectlombok:lombok:1.18.36
+  - org.springframework.boot:spring-boot-starter-test:3.4.4
+  - org.springframework.security:spring-security-test:6.4.4
+  - com.h2database:h2:2.3.232...
+2026-03-25T19:08:29.539Z [INFO] getting gitHub access token...
+2026-03-25T19:08:29.540Z [INFO] Project java version: 21
+2026-03-25T19:08:29.540Z [INFO] Maven project detected.
+2026-03-25T19:08:29.540Z [INFO] Build tool type: mvnw
+2026-03-25T19:08:29.542Z [INFO] Processing batch 1/1, size: 12
+2026-03-25T19:08:29.542Z [INFO] Proxy configuration: HTTPS_PROXY=(not set), HTTP_PROXY=(not set), NO_PROXY=(not set), NODE_EXTRA_CA_CERTS=(not set), vscode http.proxy=(not set), hasProxy=false
+2026-03-25T19:08:29.542Z [INFO] No proxy detected, using direct connection.
+2026-03-25T19:08:29.544Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+  "org.springframework.boot:spring-boot-starter-security:3.4.4",
+  "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+  "org.springframework.boot:spring-boot-starter-web:3.4.4",
+  "io.jsonwebtoken:jjwt-api:0.12.6",
+  "io.jsonwebtoken:jjwt-impl:0.12.6",
+  "io.jsonwebtoken:jjwt-jackson:0.12.6",
+  "org.postgresql:postgresql:42.7.10",
+  "org.projectlombok:lombok:1.18.36",
+  "org.springframework.boot:spring-boot-starter-test:3.4.4",
+  "org.springframework.security:spring-security-test:6.4.4",
+  "com.h2database:h2:2.3.232"
+]
+2026-03-25T19:08:29.568Z [INFO] JDK: {
+  "name": "java",
+  "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+  "version": "21"
+}
+2026-03-25T19:08:29.568Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": ".",
+  "version": ""
+}
+2026-03-25T19:08:29.568Z [INFO] Project config: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": ""
+  },
+  "jdk": {
+    "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "edupulse_back",
+  "dir": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}
+2026-03-25T19:08:29.568Z [INFO] [Environment] Running command (Java undefined): mvnw dependency:tree -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:08:29.587Z [ERROR] [MavenBuildTool] Failed to get dependencies from dependency tree: Error: Failed to run command: "mvnw dependency:tree -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:08:29.587Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:08:29.606Z [ERROR] [MavenBuildTool] Failed to get dependencies from effective pom: Error: Failed to run command: "mvnw help:effective-pom -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:08:29.606Z [INFO] [MavenBuildTool] Getting Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back from pom.xml
+2026-03-25T19:08:29.606Z [INFO] [MavenBuildTool] Searching for pom.xml files in /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:08:29.606Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:08:29.606Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:08:29.606Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-19dd67ec-3bd2-441f-bcea-2b7b3588d5b6.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:08:29.628Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-19dd67ec-3bd2-441f-bcea-2b7b3588d5b6.log'
+2026-03-25T19:08:29.628Z [INFO] [MavenBuildTool] Found pom.xml files: 
+2026-03-25T19:08:29.629Z [INFO] [Environment] Running command (Java undefined): mvnw help:evaluate -Dexpression=project.properties -q -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:08:29.647Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:08:29.666Z [ERROR] [MavenBuildTool] Failed to get Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:08:29.695Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:08:29.695Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:08:29.696Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-d5346a0f-67ef-4911-8ae1-72859c2d7963.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:08:29.715Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-d5346a0f-67ef-4911-8ae1-72859c2d7963.log'
+2026-03-25T19:08:29.927Z [INFO] Fetched 0 total advisories across all pages
+2026-03-25T19:08:29.928Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-03-25T19:08:29.928Z [INFO] done getting 0 CVEs for 12 dependencies
+2026-03-25T19:08:29.929Z [INFO] calculating patched version by dep...
+2026-03-25T19:08:29.929Z [INFO] finished getting CVEs for dependencies.
+2026-03-25T19:08:29.929Z [INFO] Found 0 dependencies with known CVEs
+2026-03-25T19:08:29.931Z [INFO] No known CVEs that need to be fixed are found for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:08:29.931Z [INFO] [Tool.invoke]({result: {
+  "message": "No known CVEs that need to be fixed are found for the given dependencies."
+}}).
+2026-03-25T19:08:29.932Z [INFO] ----------------------invoked validate_cves_for_java----------------------
+2026-03-25T19:09:01.386Z [INFO] ---------------------prepare validate_cves_for_java----------------------
+2026-03-25T19:09:01.386Z [INFO] [Tool.prepareInvocation]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:09:01.386Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T19:09:01.386Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Validate CVEs"
+}}).
+2026-03-25T19:09:01.386Z [INFO] ----------------------prepared validate_cves_for_java----------------------
+2026-03-25T19:09:01.471Z [INFO] ----------------------invoke validate_cves_for_java----------------------
+2026-03-25T19:09:01.471Z [INFO] [Tool.invoke]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:09:01.472Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T19:09:01.472Z [INFO] Project /home/soporte/Desarrollos/vscode/edupulse/edupulse_back is a maven project, try to get java version from pom.xml
+2026-03-25T19:09:01.472Z [INFO] Getting CVEs for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:09:01.472Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-data-jpa:3.4.4
+  - org.springframework.boot:spring-boot-starter-security:3.4.4
+  - org.springframework.boot:spring-boot-starter-validation:3.4.4
+  - org.springframework.boot:spring-boot-starter-web:3.4.4
+  - io.jsonwebtoken:jjwt-api:0.12.6
+  - io.jsonwebtoken:jjwt-impl:0.12.6
+  - io.jsonwebtoken:jjwt-jackson:0.12.6
+  - org.postgresql:postgresql:42.7.10
+  - org.projectlombok:lombok:1.18.36
+  - org.springframework.boot:spring-boot-starter-test:3.4.4
+  - org.springframework.security:spring-security-test:6.4.4
+  - com.h2database:h2:2.3.232...
+2026-03-25T19:09:01.472Z [INFO] getting gitHub access token...
+2026-03-25T19:09:01.474Z [INFO] Project java version: 21
+2026-03-25T19:09:01.474Z [INFO] Maven project detected.
+2026-03-25T19:09:01.474Z [INFO] Build tool type: mvnw
+2026-03-25T19:09:01.480Z [INFO] Processing batch 1/1, size: 12
+2026-03-25T19:09:01.480Z [INFO] Proxy configuration: HTTPS_PROXY=(not set), HTTP_PROXY=(not set), NO_PROXY=(not set), NODE_EXTRA_CA_CERTS=(not set), vscode http.proxy=(not set), hasProxy=false
+2026-03-25T19:09:01.480Z [INFO] No proxy detected, using direct connection.
+2026-03-25T19:09:01.480Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+  "org.springframework.boot:spring-boot-starter-security:3.4.4",
+  "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+  "org.springframework.boot:spring-boot-starter-web:3.4.4",
+  "io.jsonwebtoken:jjwt-api:0.12.6",
+  "io.jsonwebtoken:jjwt-impl:0.12.6",
+  "io.jsonwebtoken:jjwt-jackson:0.12.6",
+  "org.postgresql:postgresql:42.7.10",
+  "org.projectlombok:lombok:1.18.36",
+  "org.springframework.boot:spring-boot-starter-test:3.4.4",
+  "org.springframework.security:spring-security-test:6.4.4",
+  "com.h2database:h2:2.3.232"
+]
+2026-03-25T19:09:01.499Z [INFO] JDK: {
+  "name": "java",
+  "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+  "version": "21"
+}
+2026-03-25T19:09:01.499Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": ".",
+  "version": ""
+}
+2026-03-25T19:09:01.499Z [INFO] Project config: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": ""
+  },
+  "jdk": {
+    "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "edupulse_back",
+  "dir": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}
+2026-03-25T19:09:01.499Z [INFO] [Environment] Running command (Java undefined): mvnw dependency:tree -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:09:01.517Z [ERROR] [MavenBuildTool] Failed to get dependencies from dependency tree: Error: Failed to run command: "mvnw dependency:tree -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:09:01.518Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:09:01.537Z [ERROR] [MavenBuildTool] Failed to get dependencies from effective pom: Error: Failed to run command: "mvnw help:effective-pom -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:09:01.537Z [INFO] [MavenBuildTool] Getting Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back from pom.xml
+2026-03-25T19:09:01.537Z [INFO] [MavenBuildTool] Searching for pom.xml files in /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:09:01.537Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:09:01.537Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:09:01.537Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-dcc364a1-11f1-495d-90ef-e6e539ea69c6.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:09:01.557Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-dcc364a1-11f1-495d-90ef-e6e539ea69c6.log'
+2026-03-25T19:09:01.557Z [INFO] [MavenBuildTool] Found pom.xml files: 
+2026-03-25T19:09:01.558Z [INFO] [Environment] Running command (Java undefined): mvnw help:evaluate -Dexpression=project.properties -q -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:09:01.579Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:09:01.599Z [ERROR] [MavenBuildTool] Failed to get Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:09:01.629Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:09:01.629Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:09:01.629Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-ef1925fa-6f01-4c6e-9437-0592a68ca903.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:09:01.648Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-ef1925fa-6f01-4c6e-9437-0592a68ca903.log'
+2026-03-25T19:09:01.846Z [INFO] Fetched 0 total advisories across all pages
+2026-03-25T19:09:01.848Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-03-25T19:09:01.848Z [INFO] done getting 0 CVEs for 12 dependencies
+2026-03-25T19:09:01.848Z [INFO] calculating patched version by dep...
+2026-03-25T19:09:01.848Z [INFO] finished getting CVEs for dependencies.
+2026-03-25T19:09:01.849Z [INFO] Found 0 dependencies with known CVEs
+2026-03-25T19:09:01.855Z [INFO] No known CVEs that need to be fixed are found for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:09:01.856Z [INFO] [Tool.invoke]({result: {
+  "message": "No known CVEs that need to be fixed are found for the given dependencies."
+}}).
+2026-03-25T19:09:01.856Z [INFO] ----------------------invoked validate_cves_for_java----------------------
+2026-03-25T19:09:23.789Z [INFO] ---------------------prepare validate_cves_for_java----------------------
+2026-03-25T19:09:23.793Z [INFO] [Tool.prepareInvocation]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:09:23.793Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T19:09:23.793Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Validate CVEs"
+}}).
+2026-03-25T19:09:23.794Z [INFO] ----------------------prepared validate_cves_for_java----------------------
+2026-03-25T19:09:23.941Z [INFO] ----------------------invoke validate_cves_for_java----------------------
+2026-03-25T19:09:23.941Z [INFO] [Tool.invoke]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:09:23.941Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T19:09:23.941Z [INFO] Project /home/soporte/Desarrollos/vscode/edupulse/edupulse_back is a maven project, try to get java version from pom.xml
+2026-03-25T19:09:23.941Z [INFO] Getting CVEs for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:09:23.941Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-data-jpa:3.4.4
+  - org.springframework.boot:spring-boot-starter-security:3.4.4
+  - org.springframework.boot:spring-boot-starter-validation:3.4.4
+  - org.springframework.boot:spring-boot-starter-web:3.4.4
+  - io.jsonwebtoken:jjwt-api:0.12.6
+  - io.jsonwebtoken:jjwt-impl:0.12.6
+  - io.jsonwebtoken:jjwt-jackson:0.12.6
+  - org.postgresql:postgresql:42.7.10
+  - org.projectlombok:lombok:1.18.36
+  - org.springframework.boot:spring-boot-starter-test:3.4.4
+  - org.springframework.security:spring-security-test:6.4.4
+  - com.h2database:h2:2.3.232...
+2026-03-25T19:09:23.941Z [INFO] getting gitHub access token...
+2026-03-25T19:09:23.946Z [INFO] Project java version: 21
+2026-03-25T19:09:23.946Z [INFO] Maven project detected.
+2026-03-25T19:09:23.946Z [INFO] Build tool type: mvnw
+2026-03-25T19:09:23.948Z [INFO] Processing batch 1/1, size: 12
+2026-03-25T19:09:23.948Z [INFO] Proxy configuration: HTTPS_PROXY=(not set), HTTP_PROXY=(not set), NO_PROXY=(not set), NODE_EXTRA_CA_CERTS=(not set), vscode http.proxy=(not set), hasProxy=false
+2026-03-25T19:09:23.949Z [INFO] No proxy detected, using direct connection.
+2026-03-25T19:09:23.949Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+  "org.springframework.boot:spring-boot-starter-security:3.4.4",
+  "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+  "org.springframework.boot:spring-boot-starter-web:3.4.4",
+  "io.jsonwebtoken:jjwt-api:0.12.6",
+  "io.jsonwebtoken:jjwt-impl:0.12.6",
+  "io.jsonwebtoken:jjwt-jackson:0.12.6",
+  "org.postgresql:postgresql:42.7.10",
+  "org.projectlombok:lombok:1.18.36",
+  "org.springframework.boot:spring-boot-starter-test:3.4.4",
+  "org.springframework.security:spring-security-test:6.4.4",
+  "com.h2database:h2:2.3.232"
+]
+2026-03-25T19:09:23.985Z [INFO] JDK: {
+  "name": "java",
+  "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+  "version": "21"
+}
+2026-03-25T19:09:23.985Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": ".",
+  "version": ""
+}
+2026-03-25T19:09:23.985Z [INFO] Project config: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": ""
+  },
+  "jdk": {
+    "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "edupulse_back",
+  "dir": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}
+2026-03-25T19:09:23.985Z [INFO] [Environment] Running command (Java undefined): mvnw dependency:tree -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:09:24.016Z [ERROR] [MavenBuildTool] Failed to get dependencies from dependency tree: Error: Failed to run command: "mvnw dependency:tree -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:09:24.016Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:09:24.049Z [ERROR] [MavenBuildTool] Failed to get dependencies from effective pom: Error: Failed to run command: "mvnw help:effective-pom -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:09:24.050Z [INFO] [MavenBuildTool] Getting Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back from pom.xml
+2026-03-25T19:09:24.050Z [INFO] [MavenBuildTool] Searching for pom.xml files in /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:09:24.050Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:09:24.050Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:09:24.050Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-785c5b84-8ac3-4389-97a2-c571579aa582.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:09:24.084Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-785c5b84-8ac3-4389-97a2-c571579aa582.log'
+2026-03-25T19:09:24.084Z [INFO] [MavenBuildTool] Found pom.xml files: 
+2026-03-25T19:09:24.084Z [INFO] [Environment] Running command (Java undefined): mvnw help:evaluate -Dexpression=project.properties -q -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:09:24.117Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:09:24.151Z [ERROR] [MavenBuildTool] Failed to get Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:09:24.215Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:09:24.215Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:09:24.216Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-ef0f1349-df86-4b92-891b-7316b559eba8.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:09:24.248Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-ef0f1349-df86-4b92-891b-7316b559eba8.log'
+2026-03-25T19:09:24.309Z [INFO] Fetched 0 total advisories across all pages
+2026-03-25T19:09:24.309Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-03-25T19:09:24.309Z [INFO] done getting 0 CVEs for 12 dependencies
+2026-03-25T19:09:24.309Z [INFO] calculating patched version by dep...
+2026-03-25T19:09:24.309Z [INFO] finished getting CVEs for dependencies.
+2026-03-25T19:09:24.310Z [INFO] Found 0 dependencies with known CVEs
+2026-03-25T19:09:24.310Z [INFO] No known CVEs that need to be fixed are found for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:09:24.310Z [INFO] [Tool.invoke]({result: {
+  "message": "No known CVEs that need to be fixed are found for the given dependencies."
+}}).
+2026-03-25T19:09:24.310Z [INFO] ----------------------invoked validate_cves_for_java----------------------
+2026-03-25T19:09:46.618Z [INFO] ---------------------prepare validate_cves_for_java----------------------
+2026-03-25T19:09:46.618Z [INFO] [Tool.prepareInvocation]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:09:46.618Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T19:09:46.618Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Validate CVEs"
+}}).
+2026-03-25T19:09:46.618Z [INFO] ----------------------prepared validate_cves_for_java----------------------
+2026-03-25T19:09:46.702Z [INFO] ----------------------invoke validate_cves_for_java----------------------
+2026-03-25T19:09:46.702Z [INFO] [Tool.invoke]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:09:46.702Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T19:09:46.703Z [INFO] Project /home/soporte/Desarrollos/vscode/edupulse/edupulse_back is a maven project, try to get java version from pom.xml
+2026-03-25T19:09:46.703Z [INFO] Getting CVEs for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:09:46.703Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-data-jpa:3.4.4
+  - org.springframework.boot:spring-boot-starter-security:3.4.4
+  - org.springframework.boot:spring-boot-starter-validation:3.4.4
+  - org.springframework.boot:spring-boot-starter-web:3.4.4
+  - io.jsonwebtoken:jjwt-api:0.12.6
+  - io.jsonwebtoken:jjwt-impl:0.12.6
+  - io.jsonwebtoken:jjwt-jackson:0.12.6
+  - org.postgresql:postgresql:42.7.10
+  - org.projectlombok:lombok:1.18.36
+  - org.springframework.boot:spring-boot-starter-test:3.4.4
+  - org.springframework.security:spring-security-test:6.4.4
+  - com.h2database:h2:2.3.232...
+2026-03-25T19:09:46.703Z [INFO] getting gitHub access token...
+2026-03-25T19:09:46.703Z [INFO] Project java version: 21
+2026-03-25T19:09:46.703Z [INFO] Maven project detected.
+2026-03-25T19:09:46.703Z [INFO] Build tool type: mvnw
+2026-03-25T19:09:46.709Z [INFO] Processing batch 1/1, size: 12
+2026-03-25T19:09:46.710Z [INFO] Proxy configuration: HTTPS_PROXY=(not set), HTTP_PROXY=(not set), NO_PROXY=(not set), NODE_EXTRA_CA_CERTS=(not set), vscode http.proxy=(not set), hasProxy=false
+2026-03-25T19:09:46.710Z [INFO] No proxy detected, using direct connection.
+2026-03-25T19:09:46.711Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+  "org.springframework.boot:spring-boot-starter-security:3.4.4",
+  "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+  "org.springframework.boot:spring-boot-starter-web:3.4.4",
+  "io.jsonwebtoken:jjwt-api:0.12.6",
+  "io.jsonwebtoken:jjwt-impl:0.12.6",
+  "io.jsonwebtoken:jjwt-jackson:0.12.6",
+  "org.postgresql:postgresql:42.7.10",
+  "org.projectlombok:lombok:1.18.36",
+  "org.springframework.boot:spring-boot-starter-test:3.4.4",
+  "org.springframework.security:spring-security-test:6.4.4",
+  "com.h2database:h2:2.3.232"
+]
+2026-03-25T19:09:46.731Z [INFO] JDK: {
+  "name": "java",
+  "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+  "version": "21"
+}
+2026-03-25T19:09:46.731Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": ".",
+  "version": ""
+}
+2026-03-25T19:09:46.731Z [INFO] Project config: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": ""
+  },
+  "jdk": {
+    "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "edupulse_back",
+  "dir": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}
+2026-03-25T19:09:46.731Z [INFO] [Environment] Running command (Java undefined): mvnw dependency:tree -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:09:46.750Z [ERROR] [MavenBuildTool] Failed to get dependencies from dependency tree: Error: Failed to run command: "mvnw dependency:tree -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:09:46.751Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:09:46.770Z [ERROR] [MavenBuildTool] Failed to get dependencies from effective pom: Error: Failed to run command: "mvnw help:effective-pom -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:09:46.770Z [INFO] [MavenBuildTool] Getting Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back from pom.xml
+2026-03-25T19:09:46.770Z [INFO] [MavenBuildTool] Searching for pom.xml files in /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:09:46.770Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:09:46.770Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:09:46.770Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-e20a8033-4b65-45b3-8515-8729779af146.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:09:46.791Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-e20a8033-4b65-45b3-8515-8729779af146.log'
+2026-03-25T19:09:46.792Z [INFO] [MavenBuildTool] Found pom.xml files: 
+2026-03-25T19:09:46.792Z [INFO] [Environment] Running command (Java undefined): mvnw help:evaluate -Dexpression=project.properties -q -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:09:46.813Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:09:46.833Z [ERROR] [MavenBuildTool] Failed to get Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:09:46.863Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:09:46.864Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:09:46.864Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-4c5c6a71-e304-43b6-8bef-f47ad73d68fe.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:09:46.884Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-4c5c6a71-e304-43b6-8bef-f47ad73d68fe.log'
+2026-03-25T19:09:47.059Z [INFO] Fetched 0 total advisories across all pages
+2026-03-25T19:09:47.060Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-03-25T19:09:47.060Z [INFO] done getting 0 CVEs for 12 dependencies
+2026-03-25T19:09:47.060Z [INFO] calculating patched version by dep...
+2026-03-25T19:09:47.060Z [INFO] finished getting CVEs for dependencies.
+2026-03-25T19:09:47.061Z [INFO] Found 0 dependencies with known CVEs
+2026-03-25T19:09:47.062Z [INFO] No known CVEs that need to be fixed are found for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:09:47.062Z [INFO] [Tool.invoke]({result: {
+  "message": "No known CVEs that need to be fixed are found for the given dependencies."
+}}).
+2026-03-25T19:09:47.063Z [INFO] ----------------------invoked validate_cves_for_java----------------------
+2026-03-25T19:10:07.049Z [INFO] ---------------------prepare validate_cves_for_java----------------------
+2026-03-25T19:10:07.049Z [INFO] [Tool.prepareInvocation]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:10:07.049Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T19:10:07.049Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Validate CVEs"
+}}).
+2026-03-25T19:10:07.049Z [INFO] ----------------------prepared validate_cves_for_java----------------------
+2026-03-25T19:10:07.131Z [INFO] ----------------------invoke validate_cves_for_java----------------------
+2026-03-25T19:10:07.131Z [INFO] [Tool.invoke]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:10:07.131Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T19:10:07.131Z [INFO] Project /home/soporte/Desarrollos/vscode/edupulse/edupulse_back is a maven project, try to get java version from pom.xml
+2026-03-25T19:10:07.131Z [INFO] Getting CVEs for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:10:07.131Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-data-jpa:3.4.4
+  - org.springframework.boot:spring-boot-starter-security:3.4.4
+  - org.springframework.boot:spring-boot-starter-validation:3.4.4
+  - org.springframework.boot:spring-boot-starter-web:3.4.4
+  - io.jsonwebtoken:jjwt-api:0.12.6
+  - io.jsonwebtoken:jjwt-impl:0.12.6
+  - io.jsonwebtoken:jjwt-jackson:0.12.6
+  - org.postgresql:postgresql:42.7.10
+  - org.projectlombok:lombok:1.18.36
+  - org.springframework.boot:spring-boot-starter-test:3.4.4
+  - org.springframework.security:spring-security-test:6.4.4
+  - com.h2database:h2:2.3.232...
+2026-03-25T19:10:07.131Z [INFO] getting gitHub access token...
+2026-03-25T19:10:07.132Z [INFO] Project java version: 21
+2026-03-25T19:10:07.132Z [INFO] Maven project detected.
+2026-03-25T19:10:07.132Z [INFO] Build tool type: mvnw
+2026-03-25T19:10:07.134Z [INFO] Processing batch 1/1, size: 12
+2026-03-25T19:10:07.134Z [INFO] Proxy configuration: HTTPS_PROXY=(not set), HTTP_PROXY=(not set), NO_PROXY=(not set), NODE_EXTRA_CA_CERTS=(not set), vscode http.proxy=(not set), hasProxy=false
+2026-03-25T19:10:07.134Z [INFO] No proxy detected, using direct connection.
+2026-03-25T19:10:07.135Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+  "org.springframework.boot:spring-boot-starter-security:3.4.4",
+  "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+  "org.springframework.boot:spring-boot-starter-web:3.4.4",
+  "io.jsonwebtoken:jjwt-api:0.12.6",
+  "io.jsonwebtoken:jjwt-impl:0.12.6",
+  "io.jsonwebtoken:jjwt-jackson:0.12.6",
+  "org.postgresql:postgresql:42.7.10",
+  "org.projectlombok:lombok:1.18.36",
+  "org.springframework.boot:spring-boot-starter-test:3.4.4",
+  "org.springframework.security:spring-security-test:6.4.4",
+  "com.h2database:h2:2.3.232"
+]
+2026-03-25T19:10:07.159Z [INFO] JDK: {
+  "name": "java",
+  "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+  "version": "21"
+}
+2026-03-25T19:10:07.160Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": ".",
+  "version": ""
+}
+2026-03-25T19:10:07.160Z [INFO] Project config: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": ""
+  },
+  "jdk": {
+    "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "edupulse_back",
+  "dir": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}
+2026-03-25T19:10:07.160Z [INFO] [Environment] Running command (Java undefined): mvnw dependency:tree -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:10:07.179Z [ERROR] [MavenBuildTool] Failed to get dependencies from dependency tree: Error: Failed to run command: "mvnw dependency:tree -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:10:07.180Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:10:07.199Z [ERROR] [MavenBuildTool] Failed to get dependencies from effective pom: Error: Failed to run command: "mvnw help:effective-pom -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:10:07.199Z [INFO] [MavenBuildTool] Getting Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back from pom.xml
+2026-03-25T19:10:07.199Z [INFO] [MavenBuildTool] Searching for pom.xml files in /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:10:07.199Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:10:07.199Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:10:07.199Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-51dc8b73-617d-4e14-9200-84039cf0591b.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:10:07.219Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-51dc8b73-617d-4e14-9200-84039cf0591b.log'
+2026-03-25T19:10:07.219Z [INFO] [MavenBuildTool] Found pom.xml files: 
+2026-03-25T19:10:07.219Z [INFO] [Environment] Running command (Java undefined): mvnw help:evaluate -Dexpression=project.properties -q -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:10:07.240Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:10:07.260Z [ERROR] [MavenBuildTool] Failed to get Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:10:07.284Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:10:07.284Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:10:07.284Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-5a514b7f-a9df-42d7-b617-bea624aa530e.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:10:07.307Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-5a514b7f-a9df-42d7-b617-bea624aa530e.log'
+2026-03-25T19:10:07.534Z [INFO] Fetched 0 total advisories across all pages
+2026-03-25T19:10:07.534Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-03-25T19:10:07.535Z [INFO] done getting 0 CVEs for 12 dependencies
+2026-03-25T19:10:07.535Z [INFO] calculating patched version by dep...
+2026-03-25T19:10:07.535Z [INFO] finished getting CVEs for dependencies.
+2026-03-25T19:10:07.535Z [INFO] Found 0 dependencies with known CVEs
+2026-03-25T19:10:07.537Z [INFO] No known CVEs that need to be fixed are found for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:10:07.537Z [INFO] [Tool.invoke]({result: {
+  "message": "No known CVEs that need to be fixed are found for the given dependencies."
+}}).
+2026-03-25T19:10:07.537Z [INFO] ----------------------invoked validate_cves_for_java----------------------
+2026-03-25T19:10:27.699Z [INFO] ---------------------prepare validate_cves_for_java----------------------
+2026-03-25T19:10:27.700Z [INFO] [Tool.prepareInvocation]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:10:27.700Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T19:10:27.700Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Validate CVEs"
+}}).
+2026-03-25T19:10:27.700Z [INFO] ----------------------prepared validate_cves_for_java----------------------
+2026-03-25T19:10:27.781Z [INFO] ----------------------invoke validate_cves_for_java----------------------
+2026-03-25T19:10:27.781Z [INFO] [Tool.invoke]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:10:27.781Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T19:10:27.781Z [INFO] Project /home/soporte/Desarrollos/vscode/edupulse/edupulse_back is a maven project, try to get java version from pom.xml
+2026-03-25T19:10:27.781Z [INFO] Getting CVEs for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:10:27.781Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-data-jpa:3.4.4
+  - org.springframework.boot:spring-boot-starter-security:3.4.4
+  - org.springframework.boot:spring-boot-starter-validation:3.4.4
+  - org.springframework.boot:spring-boot-starter-web:3.4.4
+  - io.jsonwebtoken:jjwt-api:0.12.6
+  - io.jsonwebtoken:jjwt-impl:0.12.6
+  - io.jsonwebtoken:jjwt-jackson:0.12.6
+  - org.postgresql:postgresql:42.7.10
+  - org.projectlombok:lombok:1.18.36
+  - org.springframework.boot:spring-boot-starter-test:3.4.4
+  - org.springframework.security:spring-security-test:6.4.4
+  - com.h2database:h2:2.3.232...
+2026-03-25T19:10:27.782Z [INFO] getting gitHub access token...
+2026-03-25T19:10:27.782Z [INFO] Project java version: 21
+2026-03-25T19:10:27.782Z [INFO] Maven project detected.
+2026-03-25T19:10:27.782Z [INFO] Build tool type: mvnw
+2026-03-25T19:10:27.784Z [INFO] Processing batch 1/1, size: 12
+2026-03-25T19:10:27.784Z [INFO] Proxy configuration: HTTPS_PROXY=(not set), HTTP_PROXY=(not set), NO_PROXY=(not set), NODE_EXTRA_CA_CERTS=(not set), vscode http.proxy=(not set), hasProxy=false
+2026-03-25T19:10:27.784Z [INFO] No proxy detected, using direct connection.
+2026-03-25T19:10:27.784Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+  "org.springframework.boot:spring-boot-starter-security:3.4.4",
+  "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+  "org.springframework.boot:spring-boot-starter-web:3.4.4",
+  "io.jsonwebtoken:jjwt-api:0.12.6",
+  "io.jsonwebtoken:jjwt-impl:0.12.6",
+  "io.jsonwebtoken:jjwt-jackson:0.12.6",
+  "org.postgresql:postgresql:42.7.10",
+  "org.projectlombok:lombok:1.18.36",
+  "org.springframework.boot:spring-boot-starter-test:3.4.4",
+  "org.springframework.security:spring-security-test:6.4.4",
+  "com.h2database:h2:2.3.232"
+]
+2026-03-25T19:10:27.803Z [INFO] JDK: {
+  "name": "java",
+  "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+  "version": "21"
+}
+2026-03-25T19:10:27.803Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": ".",
+  "version": ""
+}
+2026-03-25T19:10:27.803Z [INFO] Project config: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": ""
+  },
+  "jdk": {
+    "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "edupulse_back",
+  "dir": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}
+2026-03-25T19:10:27.804Z [INFO] [Environment] Running command (Java undefined): mvnw dependency:tree -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:10:27.825Z [ERROR] [MavenBuildTool] Failed to get dependencies from dependency tree: Error: Failed to run command: "mvnw dependency:tree -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:10:27.826Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:10:27.846Z [ERROR] [MavenBuildTool] Failed to get dependencies from effective pom: Error: Failed to run command: "mvnw help:effective-pom -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:10:27.846Z [INFO] [MavenBuildTool] Getting Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back from pom.xml
+2026-03-25T19:10:27.846Z [INFO] [MavenBuildTool] Searching for pom.xml files in /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:10:27.846Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:10:27.846Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:10:27.846Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-d6ea72aa-3f5b-464e-af4c-dc63245515ce.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:10:27.866Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-d6ea72aa-3f5b-464e-af4c-dc63245515ce.log'
+2026-03-25T19:10:27.866Z [INFO] [MavenBuildTool] Found pom.xml files: 
+2026-03-25T19:10:27.866Z [INFO] [Environment] Running command (Java undefined): mvnw help:evaluate -Dexpression=project.properties -q -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:10:27.886Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:10:27.908Z [ERROR] [MavenBuildTool] Failed to get Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:10:27.942Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:10:27.942Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:10:27.942Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-103fb391-3ad4-406d-9eab-7aada859e082.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:10:27.962Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-103fb391-3ad4-406d-9eab-7aada859e082.log'
+2026-03-25T19:10:28.186Z [INFO] Fetched 0 total advisories across all pages
+2026-03-25T19:10:28.187Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-03-25T19:10:28.187Z [INFO] done getting 0 CVEs for 12 dependencies
+2026-03-25T19:10:28.188Z [INFO] calculating patched version by dep...
+2026-03-25T19:10:28.188Z [INFO] finished getting CVEs for dependencies.
+2026-03-25T19:10:28.188Z [INFO] Found 0 dependencies with known CVEs
+2026-03-25T19:10:28.189Z [INFO] No known CVEs that need to be fixed are found for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:10:28.190Z [INFO] [Tool.invoke]({result: {
+  "message": "No known CVEs that need to be fixed are found for the given dependencies."
+}}).
+2026-03-25T19:10:28.190Z [INFO] ----------------------invoked validate_cves_for_java----------------------
+2026-03-25T19:11:01.477Z [INFO] ---------------------prepare validate_cves_for_java----------------------
+2026-03-25T19:11:01.477Z [INFO] [Tool.prepareInvocation]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:11:01.477Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T19:11:01.477Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Validate CVEs"
+}}).
+2026-03-25T19:11:01.477Z [INFO] ----------------------prepared validate_cves_for_java----------------------
+2026-03-25T19:11:01.567Z [INFO] ----------------------invoke validate_cves_for_java----------------------
+2026-03-25T19:11:01.567Z [INFO] [Tool.invoke]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:11:01.567Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T19:11:01.567Z [INFO] Project /home/soporte/Desarrollos/vscode/edupulse/edupulse_back is a maven project, try to get java version from pom.xml
+2026-03-25T19:11:01.567Z [INFO] Getting CVEs for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:11:01.567Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-data-jpa:3.4.4
+  - org.springframework.boot:spring-boot-starter-security:3.4.4
+  - org.springframework.boot:spring-boot-starter-validation:3.4.4
+  - org.springframework.boot:spring-boot-starter-web:3.4.4
+  - io.jsonwebtoken:jjwt-api:0.12.6
+  - io.jsonwebtoken:jjwt-impl:0.12.6
+  - io.jsonwebtoken:jjwt-jackson:0.12.6
+  - org.postgresql:postgresql:42.7.10
+  - org.projectlombok:lombok:1.18.36
+  - org.springframework.boot:spring-boot-starter-test:3.4.4
+  - org.springframework.security:spring-security-test:6.4.4
+  - com.h2database:h2:2.3.232...
+2026-03-25T19:11:01.567Z [INFO] getting gitHub access token...
+2026-03-25T19:11:01.569Z [INFO] Project java version: 21
+2026-03-25T19:11:01.569Z [INFO] Maven project detected.
+2026-03-25T19:11:01.570Z [INFO] Build tool type: mvnw
+2026-03-25T19:11:01.573Z [INFO] Processing batch 1/1, size: 12
+2026-03-25T19:11:01.573Z [INFO] Proxy configuration: HTTPS_PROXY=(not set), HTTP_PROXY=(not set), NO_PROXY=(not set), NODE_EXTRA_CA_CERTS=(not set), vscode http.proxy=(not set), hasProxy=false
+2026-03-25T19:11:01.573Z [INFO] No proxy detected, using direct connection.
+2026-03-25T19:11:01.575Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+  "org.springframework.boot:spring-boot-starter-security:3.4.4",
+  "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+  "org.springframework.boot:spring-boot-starter-web:3.4.4",
+  "io.jsonwebtoken:jjwt-api:0.12.6",
+  "io.jsonwebtoken:jjwt-impl:0.12.6",
+  "io.jsonwebtoken:jjwt-jackson:0.12.6",
+  "org.postgresql:postgresql:42.7.10",
+  "org.projectlombok:lombok:1.18.36",
+  "org.springframework.boot:spring-boot-starter-test:3.4.4",
+  "org.springframework.security:spring-security-test:6.4.4",
+  "com.h2database:h2:2.3.232"
+]
+2026-03-25T19:11:01.597Z [INFO] JDK: {
+  "name": "java",
+  "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+  "version": "21"
+}
+2026-03-25T19:11:01.597Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": ".",
+  "version": ""
+}
+2026-03-25T19:11:01.597Z [INFO] Project config: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": ""
+  },
+  "jdk": {
+    "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "edupulse_back",
+  "dir": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}
+2026-03-25T19:11:01.597Z [INFO] [Environment] Running command (Java undefined): mvnw dependency:tree -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:11:01.617Z [ERROR] [MavenBuildTool] Failed to get dependencies from dependency tree: Error: Failed to run command: "mvnw dependency:tree -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:11:01.617Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:11:01.638Z [ERROR] [MavenBuildTool] Failed to get dependencies from effective pom: Error: Failed to run command: "mvnw help:effective-pom -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:11:01.638Z [INFO] [MavenBuildTool] Getting Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back from pom.xml
+2026-03-25T19:11:01.638Z [INFO] [MavenBuildTool] Searching for pom.xml files in /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:11:01.638Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:11:01.639Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:11:01.639Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-0f498623-70b3-4ede-811f-3945db379739.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:11:01.659Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-0f498623-70b3-4ede-811f-3945db379739.log'
+2026-03-25T19:11:01.659Z [INFO] [MavenBuildTool] Found pom.xml files: 
+2026-03-25T19:11:01.659Z [INFO] [Environment] Running command (Java undefined): mvnw help:evaluate -Dexpression=project.properties -q -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:11:01.680Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:11:01.699Z [ERROR] [MavenBuildTool] Failed to get Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:11:01.731Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:11:01.732Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:11:01.732Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-9936af63-38a6-4f46-b875-c9a8e6c774a9.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:11:01.752Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-9936af63-38a6-4f46-b875-c9a8e6c774a9.log'
+2026-03-25T19:11:01.937Z [INFO] Fetched 0 total advisories across all pages
+2026-03-25T19:11:01.937Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-03-25T19:11:01.937Z [INFO] done getting 0 CVEs for 12 dependencies
+2026-03-25T19:11:01.938Z [INFO] calculating patched version by dep...
+2026-03-25T19:11:01.938Z [INFO] finished getting CVEs for dependencies.
+2026-03-25T19:11:01.938Z [INFO] Found 0 dependencies with known CVEs
+2026-03-25T19:11:01.939Z [INFO] No known CVEs that need to be fixed are found for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:11:01.940Z [INFO] [Tool.invoke]({result: {
+  "message": "No known CVEs that need to be fixed are found for the given dependencies."
+}}).
+2026-03-25T19:11:01.940Z [INFO] ----------------------invoked validate_cves_for_java----------------------
+2026-03-25T19:11:33.991Z [INFO] ---------------------prepare validate_cves_for_java----------------------
+2026-03-25T19:11:33.991Z [INFO] [Tool.prepareInvocation]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:11:33.991Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T19:11:33.991Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Validate CVEs"
+}}).
+2026-03-25T19:11:33.991Z [INFO] ----------------------prepared validate_cves_for_java----------------------
+2026-03-25T19:11:34.091Z [INFO] ----------------------invoke validate_cves_for_java----------------------
+2026-03-25T19:11:34.091Z [INFO] [Tool.invoke]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:11:34.091Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T19:11:34.091Z [INFO] Project /home/soporte/Desarrollos/vscode/edupulse/edupulse_back is a maven project, try to get java version from pom.xml
+2026-03-25T19:11:34.091Z [INFO] Getting CVEs for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:11:34.091Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-data-jpa:3.4.4
+  - org.springframework.boot:spring-boot-starter-security:3.4.4
+  - org.springframework.boot:spring-boot-starter-validation:3.4.4
+  - org.springframework.boot:spring-boot-starter-web:3.4.4
+  - io.jsonwebtoken:jjwt-api:0.12.6
+  - io.jsonwebtoken:jjwt-impl:0.12.6
+  - io.jsonwebtoken:jjwt-jackson:0.12.6
+  - org.postgresql:postgresql:42.7.10
+  - org.projectlombok:lombok:1.18.36
+  - org.springframework.boot:spring-boot-starter-test:3.4.4
+  - org.springframework.security:spring-security-test:6.4.4
+  - com.h2database:h2:2.3.232...
+2026-03-25T19:11:34.091Z [INFO] getting gitHub access token...
+2026-03-25T19:11:34.092Z [INFO] Project java version: 21
+2026-03-25T19:11:34.092Z [INFO] Maven project detected.
+2026-03-25T19:11:34.092Z [INFO] Build tool type: mvnw
+2026-03-25T19:11:34.094Z [INFO] Processing batch 1/1, size: 12
+2026-03-25T19:11:34.094Z [INFO] Proxy configuration: HTTPS_PROXY=(not set), HTTP_PROXY=(not set), NO_PROXY=(not set), NODE_EXTRA_CA_CERTS=(not set), vscode http.proxy=(not set), hasProxy=false
+2026-03-25T19:11:34.094Z [INFO] No proxy detected, using direct connection.
+2026-03-25T19:11:34.095Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+  "org.springframework.boot:spring-boot-starter-security:3.4.4",
+  "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+  "org.springframework.boot:spring-boot-starter-web:3.4.4",
+  "io.jsonwebtoken:jjwt-api:0.12.6",
+  "io.jsonwebtoken:jjwt-impl:0.12.6",
+  "io.jsonwebtoken:jjwt-jackson:0.12.6",
+  "org.postgresql:postgresql:42.7.10",
+  "org.projectlombok:lombok:1.18.36",
+  "org.springframework.boot:spring-boot-starter-test:3.4.4",
+  "org.springframework.security:spring-security-test:6.4.4",
+  "com.h2database:h2:2.3.232"
+]
+2026-03-25T19:11:34.113Z [INFO] JDK: {
+  "name": "java",
+  "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+  "version": "21"
+}
+2026-03-25T19:11:34.113Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": ".",
+  "version": ""
+}
+2026-03-25T19:11:34.113Z [INFO] Project config: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": ""
+  },
+  "jdk": {
+    "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "edupulse_back",
+  "dir": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}
+2026-03-25T19:11:34.113Z [INFO] [Environment] Running command (Java undefined): mvnw dependency:tree -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:11:34.133Z [ERROR] [MavenBuildTool] Failed to get dependencies from dependency tree: Error: Failed to run command: "mvnw dependency:tree -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:11:34.133Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:11:34.156Z [ERROR] [MavenBuildTool] Failed to get dependencies from effective pom: Error: Failed to run command: "mvnw help:effective-pom -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:11:34.157Z [INFO] [MavenBuildTool] Getting Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back from pom.xml
+2026-03-25T19:11:34.157Z [INFO] [MavenBuildTool] Searching for pom.xml files in /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:11:34.157Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:11:34.157Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:11:34.157Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-8d682845-a4ec-4087-9e79-eeee7e960c5f.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:11:34.178Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-8d682845-a4ec-4087-9e79-eeee7e960c5f.log'
+2026-03-25T19:11:34.178Z [INFO] [MavenBuildTool] Found pom.xml files: 
+2026-03-25T19:11:34.178Z [INFO] [Environment] Running command (Java undefined): mvnw help:evaluate -Dexpression=project.properties -q -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:11:34.198Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:11:34.220Z [ERROR] [MavenBuildTool] Failed to get Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:11:34.247Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:11:34.248Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:11:34.248Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-ff92d422-b8e0-4ddc-a191-8030d0aeccd1.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:11:34.267Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-ff92d422-b8e0-4ddc-a191-8030d0aeccd1.log'
+2026-03-25T19:11:34.498Z [INFO] Fetched 0 total advisories across all pages
+2026-03-25T19:11:34.499Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-03-25T19:11:34.500Z [INFO] done getting 0 CVEs for 12 dependencies
+2026-03-25T19:11:34.500Z [INFO] calculating patched version by dep...
+2026-03-25T19:11:34.500Z [INFO] finished getting CVEs for dependencies.
+2026-03-25T19:11:34.500Z [INFO] Found 0 dependencies with known CVEs
+2026-03-25T19:11:34.503Z [INFO] No known CVEs that need to be fixed are found for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:11:34.503Z [INFO] [Tool.invoke]({result: {
+  "message": "No known CVEs that need to be fixed are found for the given dependencies."
+}}).
+2026-03-25T19:11:34.506Z [INFO] ----------------------invoked validate_cves_for_java----------------------
+2026-03-25T19:11:53.870Z [INFO] ---------------------prepare validate_cves_for_java----------------------
+2026-03-25T19:11:53.870Z [INFO] [Tool.prepareInvocation]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:11:53.870Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T19:11:53.870Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Validate CVEs"
+}}).
+2026-03-25T19:11:53.871Z [INFO] ----------------------prepared validate_cves_for_java----------------------
+2026-03-25T19:11:53.948Z [INFO] ----------------------invoke validate_cves_for_java----------------------
+2026-03-25T19:11:53.948Z [INFO] [Tool.invoke]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:11:53.948Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T19:11:53.948Z [INFO] Project /home/soporte/Desarrollos/vscode/edupulse/edupulse_back is a maven project, try to get java version from pom.xml
+2026-03-25T19:11:53.948Z [INFO] Getting CVEs for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:11:53.948Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-data-jpa:3.4.4
+  - org.springframework.boot:spring-boot-starter-security:3.4.4
+  - org.springframework.boot:spring-boot-starter-validation:3.4.4
+  - org.springframework.boot:spring-boot-starter-web:3.4.4
+  - io.jsonwebtoken:jjwt-api:0.12.6
+  - io.jsonwebtoken:jjwt-impl:0.12.6
+  - io.jsonwebtoken:jjwt-jackson:0.12.6
+  - org.postgresql:postgresql:42.7.10
+  - org.projectlombok:lombok:1.18.36
+  - org.springframework.boot:spring-boot-starter-test:3.4.4
+  - org.springframework.security:spring-security-test:6.4.4
+  - com.h2database:h2:2.3.232...
+2026-03-25T19:11:53.948Z [INFO] getting gitHub access token...
+2026-03-25T19:11:53.949Z [INFO] Project java version: 21
+2026-03-25T19:11:53.949Z [INFO] Maven project detected.
+2026-03-25T19:11:53.949Z [INFO] Build tool type: mvnw
+2026-03-25T19:11:53.951Z [INFO] Processing batch 1/1, size: 12
+2026-03-25T19:11:53.951Z [INFO] Proxy configuration: HTTPS_PROXY=(not set), HTTP_PROXY=(not set), NO_PROXY=(not set), NODE_EXTRA_CA_CERTS=(not set), vscode http.proxy=(not set), hasProxy=false
+2026-03-25T19:11:53.951Z [INFO] No proxy detected, using direct connection.
+2026-03-25T19:11:53.952Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+  "org.springframework.boot:spring-boot-starter-security:3.4.4",
+  "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+  "org.springframework.boot:spring-boot-starter-web:3.4.4",
+  "io.jsonwebtoken:jjwt-api:0.12.6",
+  "io.jsonwebtoken:jjwt-impl:0.12.6",
+  "io.jsonwebtoken:jjwt-jackson:0.12.6",
+  "org.postgresql:postgresql:42.7.10",
+  "org.projectlombok:lombok:1.18.36",
+  "org.springframework.boot:spring-boot-starter-test:3.4.4",
+  "org.springframework.security:spring-security-test:6.4.4",
+  "com.h2database:h2:2.3.232"
+]
+2026-03-25T19:11:53.976Z [INFO] JDK: {
+  "name": "java",
+  "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+  "version": "21"
+}
+2026-03-25T19:11:53.976Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": ".",
+  "version": ""
+}
+2026-03-25T19:11:53.977Z [INFO] Project config: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": ""
+  },
+  "jdk": {
+    "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "edupulse_back",
+  "dir": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}
+2026-03-25T19:11:53.977Z [INFO] [Environment] Running command (Java undefined): mvnw dependency:tree -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:11:53.997Z [ERROR] [MavenBuildTool] Failed to get dependencies from dependency tree: Error: Failed to run command: "mvnw dependency:tree -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:11:53.997Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:11:54.016Z [ERROR] [MavenBuildTool] Failed to get dependencies from effective pom: Error: Failed to run command: "mvnw help:effective-pom -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:11:54.016Z [INFO] [MavenBuildTool] Getting Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back from pom.xml
+2026-03-25T19:11:54.016Z [INFO] [MavenBuildTool] Searching for pom.xml files in /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:11:54.016Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:11:54.016Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:11:54.017Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-3b2c82e5-2069-4b4f-88da-fb83728e2128.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:11:54.038Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-3b2c82e5-2069-4b4f-88da-fb83728e2128.log'
+2026-03-25T19:11:54.038Z [INFO] [MavenBuildTool] Found pom.xml files: 
+2026-03-25T19:11:54.038Z [INFO] [Environment] Running command (Java undefined): mvnw help:evaluate -Dexpression=project.properties -q -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:11:54.059Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:11:54.079Z [ERROR] [MavenBuildTool] Failed to get Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:11:54.110Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:11:54.110Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:11:54.110Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-a0e25456-ccf3-45ed-8516-62e3118b4629.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:11:54.129Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-a0e25456-ccf3-45ed-8516-62e3118b4629.log'
+2026-03-25T19:11:54.299Z [INFO] Fetched 0 total advisories across all pages
+2026-03-25T19:11:54.300Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-03-25T19:11:54.300Z [INFO] done getting 0 CVEs for 12 dependencies
+2026-03-25T19:11:54.300Z [INFO] calculating patched version by dep...
+2026-03-25T19:11:54.300Z [INFO] finished getting CVEs for dependencies.
+2026-03-25T19:11:54.300Z [INFO] Found 0 dependencies with known CVEs
+2026-03-25T19:11:54.302Z [INFO] No known CVEs that need to be fixed are found for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:11:54.302Z [INFO] [Tool.invoke]({result: {
+  "message": "No known CVEs that need to be fixed are found for the given dependencies."
+}}).
+2026-03-25T19:11:54.303Z [INFO] ----------------------invoked validate_cves_for_java----------------------
+2026-03-25T19:12:21.533Z [INFO] ---------------------prepare validate_cves_for_java----------------------
+2026-03-25T19:12:21.533Z [INFO] [Tool.prepareInvocation]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:12:21.533Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T19:12:21.533Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Validate CVEs"
+}}).
+2026-03-25T19:12:21.534Z [INFO] ----------------------prepared validate_cves_for_java----------------------
+2026-03-25T19:12:21.629Z [INFO] ----------------------invoke validate_cves_for_java----------------------
+2026-03-25T19:12:21.629Z [INFO] [Tool.invoke]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:12:21.629Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T19:12:21.629Z [INFO] Project /home/soporte/Desarrollos/vscode/edupulse/edupulse_back is a maven project, try to get java version from pom.xml
+2026-03-25T19:12:21.629Z [INFO] Getting CVEs for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:12:21.629Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-data-jpa:3.4.4
+  - org.springframework.boot:spring-boot-starter-security:3.4.4
+  - org.springframework.boot:spring-boot-starter-validation:3.4.4
+  - org.springframework.boot:spring-boot-starter-web:3.4.4
+  - io.jsonwebtoken:jjwt-api:0.12.6
+  - io.jsonwebtoken:jjwt-impl:0.12.6
+  - io.jsonwebtoken:jjwt-jackson:0.12.6
+  - org.postgresql:postgresql:42.7.10
+  - org.projectlombok:lombok:1.18.36
+  - org.springframework.boot:spring-boot-starter-test:3.4.4
+  - org.springframework.security:spring-security-test:6.4.4
+  - com.h2database:h2:2.3.232...
+2026-03-25T19:12:21.629Z [INFO] getting gitHub access token...
+2026-03-25T19:12:21.630Z [INFO] Project java version: 21
+2026-03-25T19:12:21.630Z [INFO] Maven project detected.
+2026-03-25T19:12:21.630Z [INFO] Build tool type: mvnw
+2026-03-25T19:12:21.632Z [INFO] Processing batch 1/1, size: 12
+2026-03-25T19:12:21.632Z [INFO] Proxy configuration: HTTPS_PROXY=(not set), HTTP_PROXY=(not set), NO_PROXY=(not set), NODE_EXTRA_CA_CERTS=(not set), vscode http.proxy=(not set), hasProxy=false
+2026-03-25T19:12:21.632Z [INFO] No proxy detected, using direct connection.
+2026-03-25T19:12:21.633Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+  "org.springframework.boot:spring-boot-starter-security:3.4.4",
+  "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+  "org.springframework.boot:spring-boot-starter-web:3.4.4",
+  "io.jsonwebtoken:jjwt-api:0.12.6",
+  "io.jsonwebtoken:jjwt-impl:0.12.6",
+  "io.jsonwebtoken:jjwt-jackson:0.12.6",
+  "org.postgresql:postgresql:42.7.10",
+  "org.projectlombok:lombok:1.18.36",
+  "org.springframework.boot:spring-boot-starter-test:3.4.4",
+  "org.springframework.security:spring-security-test:6.4.4",
+  "com.h2database:h2:2.3.232"
+]
+2026-03-25T19:12:21.657Z [INFO] JDK: {
+  "name": "java",
+  "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+  "version": "21"
+}
+2026-03-25T19:12:21.657Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": ".",
+  "version": ""
+}
+2026-03-25T19:12:21.657Z [INFO] Project config: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": ""
+  },
+  "jdk": {
+    "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "edupulse_back",
+  "dir": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}
+2026-03-25T19:12:21.657Z [INFO] [Environment] Running command (Java undefined): mvnw dependency:tree -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:12:21.677Z [ERROR] [MavenBuildTool] Failed to get dependencies from dependency tree: Error: Failed to run command: "mvnw dependency:tree -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:12:21.677Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:12:21.697Z [ERROR] [MavenBuildTool] Failed to get dependencies from effective pom: Error: Failed to run command: "mvnw help:effective-pom -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:12:21.697Z [INFO] [MavenBuildTool] Getting Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back from pom.xml
+2026-03-25T19:12:21.697Z [INFO] [MavenBuildTool] Searching for pom.xml files in /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:12:21.697Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:12:21.697Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:12:21.697Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-7817f3bb-04b6-43cb-a395-f5eef198c330.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:12:21.718Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-7817f3bb-04b6-43cb-a395-f5eef198c330.log'
+2026-03-25T19:12:21.718Z [INFO] [MavenBuildTool] Found pom.xml files: 
+2026-03-25T19:12:21.718Z [INFO] [Environment] Running command (Java undefined): mvnw help:evaluate -Dexpression=project.properties -q -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:12:21.740Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:12:21.761Z [ERROR] [MavenBuildTool] Failed to get Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:12:21.806Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:12:21.806Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:12:21.806Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-cc63b629-6de5-438b-bceb-615826a03258.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:12:21.830Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-cc63b629-6de5-438b-bceb-615826a03258.log'
+2026-03-25T19:12:21.999Z [INFO] Fetched 0 total advisories across all pages
+2026-03-25T19:12:22.000Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-03-25T19:12:22.001Z [INFO] done getting 0 CVEs for 12 dependencies
+2026-03-25T19:12:22.001Z [INFO] calculating patched version by dep...
+2026-03-25T19:12:22.001Z [INFO] finished getting CVEs for dependencies.
+2026-03-25T19:12:22.002Z [INFO] Found 0 dependencies with known CVEs
+2026-03-25T19:12:22.003Z [INFO] No known CVEs that need to be fixed are found for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:12:22.004Z [INFO] [Tool.invoke]({result: {
+  "message": "No known CVEs that need to be fixed are found for the given dependencies."
+}}).
+2026-03-25T19:12:22.004Z [INFO] ----------------------invoked validate_cves_for_java----------------------
+2026-03-25T19:12:42.703Z [INFO] ---------------------prepare validate_cves_for_java----------------------
+2026-03-25T19:12:42.703Z [INFO] [Tool.prepareInvocation]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:12:42.703Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T19:12:42.703Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Validate CVEs"
+}}).
+2026-03-25T19:12:42.703Z [INFO] ----------------------prepared validate_cves_for_java----------------------
+2026-03-25T19:12:42.781Z [INFO] ----------------------invoke validate_cves_for_java----------------------
+2026-03-25T19:12:42.781Z [INFO] [Tool.invoke]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:12:42.781Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T19:12:42.781Z [INFO] Project /home/soporte/Desarrollos/vscode/edupulse/edupulse_back is a maven project, try to get java version from pom.xml
+2026-03-25T19:12:42.781Z [INFO] Getting CVEs for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:12:42.781Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-data-jpa:3.4.4
+  - org.springframework.boot:spring-boot-starter-security:3.4.4
+  - org.springframework.boot:spring-boot-starter-validation:3.4.4
+  - org.springframework.boot:spring-boot-starter-web:3.4.4
+  - io.jsonwebtoken:jjwt-api:0.12.6
+  - io.jsonwebtoken:jjwt-impl:0.12.6
+  - io.jsonwebtoken:jjwt-jackson:0.12.6
+  - org.postgresql:postgresql:42.7.10
+  - org.projectlombok:lombok:1.18.36
+  - org.springframework.boot:spring-boot-starter-test:3.4.4
+  - org.springframework.security:spring-security-test:6.4.4
+  - com.h2database:h2:2.3.232...
+2026-03-25T19:12:42.781Z [INFO] getting gitHub access token...
+2026-03-25T19:12:42.782Z [INFO] Project java version: 21
+2026-03-25T19:12:42.783Z [INFO] Maven project detected.
+2026-03-25T19:12:42.783Z [INFO] Build tool type: mvnw
+2026-03-25T19:12:42.786Z [INFO] Processing batch 1/1, size: 12
+2026-03-25T19:12:42.786Z [INFO] Proxy configuration: HTTPS_PROXY=(not set), HTTP_PROXY=(not set), NO_PROXY=(not set), NODE_EXTRA_CA_CERTS=(not set), vscode http.proxy=(not set), hasProxy=false
+2026-03-25T19:12:42.786Z [INFO] No proxy detected, using direct connection.
+2026-03-25T19:12:42.787Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+  "org.springframework.boot:spring-boot-starter-security:3.4.4",
+  "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+  "org.springframework.boot:spring-boot-starter-web:3.4.4",
+  "io.jsonwebtoken:jjwt-api:0.12.6",
+  "io.jsonwebtoken:jjwt-impl:0.12.6",
+  "io.jsonwebtoken:jjwt-jackson:0.12.6",
+  "org.postgresql:postgresql:42.7.10",
+  "org.projectlombok:lombok:1.18.36",
+  "org.springframework.boot:spring-boot-starter-test:3.4.4",
+  "org.springframework.security:spring-security-test:6.4.4",
+  "com.h2database:h2:2.3.232"
+]
+2026-03-25T19:12:42.805Z [INFO] JDK: {
+  "name": "java",
+  "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+  "version": "21"
+}
+2026-03-25T19:12:42.805Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": ".",
+  "version": ""
+}
+2026-03-25T19:12:42.805Z [INFO] Project config: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": ""
+  },
+  "jdk": {
+    "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "edupulse_back",
+  "dir": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}
+2026-03-25T19:12:42.806Z [INFO] [Environment] Running command (Java undefined): mvnw dependency:tree -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:12:42.825Z [ERROR] [MavenBuildTool] Failed to get dependencies from dependency tree: Error: Failed to run command: "mvnw dependency:tree -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:12:42.825Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:12:42.843Z [ERROR] [MavenBuildTool] Failed to get dependencies from effective pom: Error: Failed to run command: "mvnw help:effective-pom -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:12:42.844Z [INFO] [MavenBuildTool] Getting Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back from pom.xml
+2026-03-25T19:12:42.844Z [INFO] [MavenBuildTool] Searching for pom.xml files in /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:12:42.844Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:12:42.844Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:12:42.844Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-f73fa79b-135b-4234-aef9-fd94ffe2efa0.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:12:42.864Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-f73fa79b-135b-4234-aef9-fd94ffe2efa0.log'
+2026-03-25T19:12:42.864Z [INFO] [MavenBuildTool] Found pom.xml files: 
+2026-03-25T19:12:42.864Z [INFO] [Environment] Running command (Java undefined): mvnw help:evaluate -Dexpression=project.properties -q -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:12:42.884Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:12:42.905Z [ERROR] [MavenBuildTool] Failed to get Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:12:42.931Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:12:42.931Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:12:42.931Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-f8b1c0f3-0238-4b36-841f-8070264b35e7.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:12:42.952Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-f8b1c0f3-0238-4b36-841f-8070264b35e7.log'
+2026-03-25T19:12:43.130Z [INFO] Fetched 0 total advisories across all pages
+2026-03-25T19:12:43.130Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-03-25T19:12:43.130Z [INFO] done getting 0 CVEs for 12 dependencies
+2026-03-25T19:12:43.131Z [INFO] calculating patched version by dep...
+2026-03-25T19:12:43.131Z [INFO] finished getting CVEs for dependencies.
+2026-03-25T19:12:43.131Z [INFO] Found 0 dependencies with known CVEs
+2026-03-25T19:12:43.132Z [INFO] No known CVEs that need to be fixed are found for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:12:43.132Z [INFO] [Tool.invoke]({result: {
+  "message": "No known CVEs that need to be fixed are found for the given dependencies."
+}}).
+2026-03-25T19:12:43.133Z [INFO] ----------------------invoked validate_cves_for_java----------------------
+2026-03-25T19:13:14.779Z [INFO] ---------------------prepare validate_cves_for_java----------------------
+2026-03-25T19:13:14.779Z [INFO] [Tool.prepareInvocation]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:13:14.780Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T19:13:14.780Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Validate CVEs"
+}}).
+2026-03-25T19:13:14.780Z [INFO] ----------------------prepared validate_cves_for_java----------------------
+2026-03-25T19:13:14.862Z [INFO] ----------------------invoke validate_cves_for_java----------------------
+2026-03-25T19:13:14.862Z [INFO] [Tool.invoke]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:13:14.862Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T19:13:14.862Z [INFO] Project /home/soporte/Desarrollos/vscode/edupulse/edupulse_back is a maven project, try to get java version from pom.xml
+2026-03-25T19:13:14.862Z [INFO] Getting CVEs for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:13:14.863Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-data-jpa:3.4.4
+  - org.springframework.boot:spring-boot-starter-security:3.4.4
+  - org.springframework.boot:spring-boot-starter-validation:3.4.4
+  - org.springframework.boot:spring-boot-starter-web:3.4.4
+  - io.jsonwebtoken:jjwt-api:0.12.6
+  - io.jsonwebtoken:jjwt-impl:0.12.6
+  - io.jsonwebtoken:jjwt-jackson:0.12.6
+  - org.postgresql:postgresql:42.7.10
+  - org.projectlombok:lombok:1.18.36
+  - org.springframework.boot:spring-boot-starter-test:3.4.4
+  - org.springframework.security:spring-security-test:6.4.4
+  - com.h2database:h2:2.3.232...
+2026-03-25T19:13:14.863Z [INFO] getting gitHub access token...
+2026-03-25T19:13:14.863Z [INFO] Project java version: 21
+2026-03-25T19:13:14.863Z [INFO] Maven project detected.
+2026-03-25T19:13:14.863Z [INFO] Build tool type: mvnw
+2026-03-25T19:13:14.870Z [INFO] Processing batch 1/1, size: 12
+2026-03-25T19:13:14.870Z [INFO] Proxy configuration: HTTPS_PROXY=(not set), HTTP_PROXY=(not set), NO_PROXY=(not set), NODE_EXTRA_CA_CERTS=(not set), vscode http.proxy=(not set), hasProxy=false
+2026-03-25T19:13:14.870Z [INFO] No proxy detected, using direct connection.
+2026-03-25T19:13:14.871Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+  "org.springframework.boot:spring-boot-starter-security:3.4.4",
+  "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+  "org.springframework.boot:spring-boot-starter-web:3.4.4",
+  "io.jsonwebtoken:jjwt-api:0.12.6",
+  "io.jsonwebtoken:jjwt-impl:0.12.6",
+  "io.jsonwebtoken:jjwt-jackson:0.12.6",
+  "org.postgresql:postgresql:42.7.10",
+  "org.projectlombok:lombok:1.18.36",
+  "org.springframework.boot:spring-boot-starter-test:3.4.4",
+  "org.springframework.security:spring-security-test:6.4.4",
+  "com.h2database:h2:2.3.232"
+]
+2026-03-25T19:13:14.888Z [INFO] JDK: {
+  "name": "java",
+  "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+  "version": "21"
+}
+2026-03-25T19:13:14.888Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": ".",
+  "version": ""
+}
+2026-03-25T19:13:14.888Z [INFO] Project config: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": ""
+  },
+  "jdk": {
+    "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "edupulse_back",
+  "dir": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}
+2026-03-25T19:13:14.889Z [INFO] [Environment] Running command (Java undefined): mvnw dependency:tree -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:13:14.908Z [ERROR] [MavenBuildTool] Failed to get dependencies from dependency tree: Error: Failed to run command: "mvnw dependency:tree -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:13:14.908Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:13:14.927Z [ERROR] [MavenBuildTool] Failed to get dependencies from effective pom: Error: Failed to run command: "mvnw help:effective-pom -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:13:14.927Z [INFO] [MavenBuildTool] Getting Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back from pom.xml
+2026-03-25T19:13:14.927Z [INFO] [MavenBuildTool] Searching for pom.xml files in /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:13:14.927Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:13:14.928Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:13:14.928Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-78d17376-45f5-4b87-9bf5-8721b5c7165c.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:13:14.948Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-78d17376-45f5-4b87-9bf5-8721b5c7165c.log'
+2026-03-25T19:13:14.948Z [INFO] [MavenBuildTool] Found pom.xml files: 
+2026-03-25T19:13:14.948Z [INFO] [Environment] Running command (Java undefined): mvnw help:evaluate -Dexpression=project.properties -q -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:13:14.979Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:13:15.020Z [ERROR] [MavenBuildTool] Failed to get Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:13:15.111Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:13:15.112Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:13:15.112Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-9dd505a6-c98d-4153-940b-2f65090db0e3.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:13:15.159Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-9dd505a6-c98d-4153-940b-2f65090db0e3.log'
+2026-03-25T19:13:15.234Z [INFO] Fetched 0 total advisories across all pages
+2026-03-25T19:13:15.234Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-03-25T19:13:15.234Z [INFO] done getting 0 CVEs for 12 dependencies
+2026-03-25T19:13:15.234Z [INFO] calculating patched version by dep...
+2026-03-25T19:13:15.234Z [INFO] finished getting CVEs for dependencies.
+2026-03-25T19:13:15.234Z [INFO] Found 0 dependencies with known CVEs
+2026-03-25T19:13:15.235Z [INFO] No known CVEs that need to be fixed are found for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:13:15.235Z [INFO] [Tool.invoke]({result: {
+  "message": "No known CVEs that need to be fixed are found for the given dependencies."
+}}).
+2026-03-25T19:13:15.235Z [INFO] ----------------------invoked validate_cves_for_java----------------------
+2026-03-25T19:13:59.005Z [INFO] ---------------------prepare validate_cves_for_java----------------------
+2026-03-25T19:13:59.005Z [INFO] [Tool.prepareInvocation]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:13:59.005Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T19:13:59.005Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Validate CVEs"
+}}).
+2026-03-25T19:13:59.005Z [INFO] ----------------------prepared validate_cves_for_java----------------------
+2026-03-25T19:13:59.086Z [INFO] ----------------------invoke validate_cves_for_java----------------------
+2026-03-25T19:13:59.086Z [INFO] [Tool.invoke]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:13:59.086Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T19:13:59.086Z [INFO] Project /home/soporte/Desarrollos/vscode/edupulse/edupulse_back is a maven project, try to get java version from pom.xml
+2026-03-25T19:13:59.086Z [INFO] Getting CVEs for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:13:59.086Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-data-jpa:3.4.4
+  - org.springframework.boot:spring-boot-starter-security:3.4.4
+  - org.springframework.boot:spring-boot-starter-validation:3.4.4
+  - org.springframework.boot:spring-boot-starter-web:3.4.4
+  - io.jsonwebtoken:jjwt-api:0.12.6
+  - io.jsonwebtoken:jjwt-impl:0.12.6
+  - io.jsonwebtoken:jjwt-jackson:0.12.6
+  - org.postgresql:postgresql:42.7.10
+  - org.projectlombok:lombok:1.18.36
+  - org.springframework.boot:spring-boot-starter-test:3.4.4
+  - org.springframework.security:spring-security-test:6.4.4
+  - com.h2database:h2:2.3.232...
+2026-03-25T19:13:59.086Z [INFO] getting gitHub access token...
+2026-03-25T19:13:59.087Z [INFO] Project java version: 21
+2026-03-25T19:13:59.087Z [INFO] Maven project detected.
+2026-03-25T19:13:59.087Z [INFO] Build tool type: mvnw
+2026-03-25T19:13:59.089Z [INFO] Processing batch 1/1, size: 12
+2026-03-25T19:13:59.090Z [INFO] Proxy configuration: HTTPS_PROXY=(not set), HTTP_PROXY=(not set), NO_PROXY=(not set), NODE_EXTRA_CA_CERTS=(not set), vscode http.proxy=(not set), hasProxy=false
+2026-03-25T19:13:59.090Z [INFO] No proxy detected, using direct connection.
+2026-03-25T19:13:59.090Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+  "org.springframework.boot:spring-boot-starter-security:3.4.4",
+  "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+  "org.springframework.boot:spring-boot-starter-web:3.4.4",
+  "io.jsonwebtoken:jjwt-api:0.12.6",
+  "io.jsonwebtoken:jjwt-impl:0.12.6",
+  "io.jsonwebtoken:jjwt-jackson:0.12.6",
+  "org.postgresql:postgresql:42.7.10",
+  "org.projectlombok:lombok:1.18.36",
+  "org.springframework.boot:spring-boot-starter-test:3.4.4",
+  "org.springframework.security:spring-security-test:6.4.4",
+  "com.h2database:h2:2.3.232"
+]
+2026-03-25T19:13:59.107Z [INFO] JDK: {
+  "name": "java",
+  "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+  "version": "21"
+}
+2026-03-25T19:13:59.107Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": ".",
+  "version": ""
+}
+2026-03-25T19:13:59.107Z [INFO] Project config: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": ""
+  },
+  "jdk": {
+    "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "edupulse_back",
+  "dir": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}
+2026-03-25T19:13:59.108Z [INFO] [Environment] Running command (Java undefined): mvnw dependency:tree -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:13:59.126Z [ERROR] [MavenBuildTool] Failed to get dependencies from dependency tree: Error: Failed to run command: "mvnw dependency:tree -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:13:59.126Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:13:59.145Z [ERROR] [MavenBuildTool] Failed to get dependencies from effective pom: Error: Failed to run command: "mvnw help:effective-pom -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:13:59.145Z [INFO] [MavenBuildTool] Getting Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back from pom.xml
+2026-03-25T19:13:59.145Z [INFO] [MavenBuildTool] Searching for pom.xml files in /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:13:59.145Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:13:59.145Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:13:59.146Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-788b84df-c248-4aa8-b525-13b275165615.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:13:59.165Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-788b84df-c248-4aa8-b525-13b275165615.log'
+2026-03-25T19:13:59.165Z [INFO] [MavenBuildTool] Found pom.xml files: 
+2026-03-25T19:13:59.166Z [INFO] [Environment] Running command (Java undefined): mvnw help:evaluate -Dexpression=project.properties -q -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:13:59.187Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:13:59.207Z [ERROR] [MavenBuildTool] Failed to get Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:13:59.236Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:13:59.236Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:13:59.236Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-cad15f63-5587-44d4-8301-81c9f28d2bbd.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:13:59.255Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-cad15f63-5587-44d4-8301-81c9f28d2bbd.log'
+2026-03-25T19:13:59.441Z [INFO] Fetched 0 total advisories across all pages
+2026-03-25T19:13:59.442Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-03-25T19:13:59.442Z [INFO] done getting 0 CVEs for 12 dependencies
+2026-03-25T19:13:59.442Z [INFO] calculating patched version by dep...
+2026-03-25T19:13:59.442Z [INFO] finished getting CVEs for dependencies.
+2026-03-25T19:13:59.442Z [INFO] Found 0 dependencies with known CVEs
+2026-03-25T19:13:59.443Z [INFO] No known CVEs that need to be fixed are found for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:13:59.443Z [INFO] [Tool.invoke]({result: {
+  "message": "No known CVEs that need to be fixed are found for the given dependencies."
+}}).
+2026-03-25T19:13:59.443Z [INFO] ----------------------invoked validate_cves_for_java----------------------
+2026-03-25T19:14:20.988Z [INFO] ---------------------prepare validate_cves_for_java----------------------
+2026-03-25T19:14:20.988Z [INFO] [Tool.prepareInvocation]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:14:20.988Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T19:14:20.988Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Validate CVEs"
+}}).
+2026-03-25T19:14:20.988Z [INFO] ----------------------prepared validate_cves_for_java----------------------
+2026-03-25T19:14:21.073Z [INFO] ----------------------invoke validate_cves_for_java----------------------
+2026-03-25T19:14:21.073Z [INFO] [Tool.invoke]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:14:21.073Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T19:14:21.073Z [INFO] Project /home/soporte/Desarrollos/vscode/edupulse/edupulse_back is a maven project, try to get java version from pom.xml
+2026-03-25T19:14:21.073Z [INFO] Getting CVEs for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:14:21.073Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-data-jpa:3.4.4
+  - org.springframework.boot:spring-boot-starter-security:3.4.4
+  - org.springframework.boot:spring-boot-starter-validation:3.4.4
+  - org.springframework.boot:spring-boot-starter-web:3.4.4
+  - io.jsonwebtoken:jjwt-api:0.12.6
+  - io.jsonwebtoken:jjwt-impl:0.12.6
+  - io.jsonwebtoken:jjwt-jackson:0.12.6
+  - org.postgresql:postgresql:42.7.10
+  - org.projectlombok:lombok:1.18.36
+  - org.springframework.boot:spring-boot-starter-test:3.4.4
+  - org.springframework.security:spring-security-test:6.4.4
+  - com.h2database:h2:2.3.232...
+2026-03-25T19:14:21.073Z [INFO] getting gitHub access token...
+2026-03-25T19:14:21.074Z [INFO] Project java version: 21
+2026-03-25T19:14:21.074Z [INFO] Maven project detected.
+2026-03-25T19:14:21.074Z [INFO] Build tool type: mvnw
+2026-03-25T19:14:21.076Z [INFO] Processing batch 1/1, size: 12
+2026-03-25T19:14:21.076Z [INFO] Proxy configuration: HTTPS_PROXY=(not set), HTTP_PROXY=(not set), NO_PROXY=(not set), NODE_EXTRA_CA_CERTS=(not set), vscode http.proxy=(not set), hasProxy=false
+2026-03-25T19:14:21.076Z [INFO] No proxy detected, using direct connection.
+2026-03-25T19:14:21.076Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+  "org.springframework.boot:spring-boot-starter-security:3.4.4",
+  "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+  "org.springframework.boot:spring-boot-starter-web:3.4.4",
+  "io.jsonwebtoken:jjwt-api:0.12.6",
+  "io.jsonwebtoken:jjwt-impl:0.12.6",
+  "io.jsonwebtoken:jjwt-jackson:0.12.6",
+  "org.postgresql:postgresql:42.7.10",
+  "org.projectlombok:lombok:1.18.36",
+  "org.springframework.boot:spring-boot-starter-test:3.4.4",
+  "org.springframework.security:spring-security-test:6.4.4",
+  "com.h2database:h2:2.3.232"
+]
+2026-03-25T19:14:21.093Z [INFO] JDK: {
+  "name": "java",
+  "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+  "version": "21"
+}
+2026-03-25T19:14:21.093Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": ".",
+  "version": ""
+}
+2026-03-25T19:14:21.093Z [INFO] Project config: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": ""
+  },
+  "jdk": {
+    "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "edupulse_back",
+  "dir": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}
+2026-03-25T19:14:21.093Z [INFO] [Environment] Running command (Java undefined): mvnw dependency:tree -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:14:21.113Z [ERROR] [MavenBuildTool] Failed to get dependencies from dependency tree: Error: Failed to run command: "mvnw dependency:tree -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:14:21.113Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:14:21.134Z [ERROR] [MavenBuildTool] Failed to get dependencies from effective pom: Error: Failed to run command: "mvnw help:effective-pom -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:14:21.135Z [INFO] [MavenBuildTool] Getting Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back from pom.xml
+2026-03-25T19:14:21.135Z [INFO] [MavenBuildTool] Searching for pom.xml files in /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:14:21.135Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:14:21.135Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:14:21.135Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-6cbfc24f-3a3f-4411-a751-12d1597087a2.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:14:21.156Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-6cbfc24f-3a3f-4411-a751-12d1597087a2.log'
+2026-03-25T19:14:21.156Z [INFO] [MavenBuildTool] Found pom.xml files: 
+2026-03-25T19:14:21.156Z [INFO] [Environment] Running command (Java undefined): mvnw help:evaluate -Dexpression=project.properties -q -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:14:21.181Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:14:21.206Z [ERROR] [MavenBuildTool] Failed to get Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:14:21.239Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:14:21.239Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:14:21.240Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-b7a9a7de-a763-4635-80f7-874104c64189.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:14:21.258Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-b7a9a7de-a763-4635-80f7-874104c64189.log'
+2026-03-25T19:14:21.461Z [INFO] Fetched 0 total advisories across all pages
+2026-03-25T19:14:21.461Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-03-25T19:14:21.461Z [INFO] done getting 0 CVEs for 12 dependencies
+2026-03-25T19:14:21.462Z [INFO] calculating patched version by dep...
+2026-03-25T19:14:21.462Z [INFO] finished getting CVEs for dependencies.
+2026-03-25T19:14:21.462Z [INFO] Found 0 dependencies with known CVEs
+2026-03-25T19:14:21.463Z [INFO] No known CVEs that need to be fixed are found for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:14:21.464Z [INFO] [Tool.invoke]({result: {
+  "message": "No known CVEs that need to be fixed are found for the given dependencies."
+}}).
+2026-03-25T19:14:21.464Z [INFO] ----------------------invoked validate_cves_for_java----------------------
+2026-03-25T19:14:44.079Z [INFO] ---------------------prepare validate_cves_for_java----------------------
+2026-03-25T19:14:44.079Z [INFO] [Tool.prepareInvocation]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:14:44.079Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T19:14:44.079Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Validate CVEs"
+}}).
+2026-03-25T19:14:44.079Z [INFO] ----------------------prepared validate_cves_for_java----------------------
+2026-03-25T19:14:44.158Z [INFO] ----------------------invoke validate_cves_for_java----------------------
+2026-03-25T19:14:44.158Z [INFO] [Tool.invoke]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:14:44.158Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T19:14:44.158Z [INFO] Project /home/soporte/Desarrollos/vscode/edupulse/edupulse_back is a maven project, try to get java version from pom.xml
+2026-03-25T19:14:44.158Z [INFO] Getting CVEs for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:14:44.158Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-data-jpa:3.4.4
+  - org.springframework.boot:spring-boot-starter-security:3.4.4
+  - org.springframework.boot:spring-boot-starter-validation:3.4.4
+  - org.springframework.boot:spring-boot-starter-web:3.4.4
+  - io.jsonwebtoken:jjwt-api:0.12.6
+  - io.jsonwebtoken:jjwt-impl:0.12.6
+  - io.jsonwebtoken:jjwt-jackson:0.12.6
+  - org.postgresql:postgresql:42.7.10
+  - org.projectlombok:lombok:1.18.36
+  - org.springframework.boot:spring-boot-starter-test:3.4.4
+  - org.springframework.security:spring-security-test:6.4.4
+  - com.h2database:h2:2.3.232...
+2026-03-25T19:14:44.158Z [INFO] getting gitHub access token...
+2026-03-25T19:14:44.159Z [INFO] Project java version: 21
+2026-03-25T19:14:44.159Z [INFO] Maven project detected.
+2026-03-25T19:14:44.159Z [INFO] Build tool type: mvnw
+2026-03-25T19:14:44.161Z [INFO] Processing batch 1/1, size: 12
+2026-03-25T19:14:44.161Z [INFO] Proxy configuration: HTTPS_PROXY=(not set), HTTP_PROXY=(not set), NO_PROXY=(not set), NODE_EXTRA_CA_CERTS=(not set), vscode http.proxy=(not set), hasProxy=false
+2026-03-25T19:14:44.161Z [INFO] No proxy detected, using direct connection.
+2026-03-25T19:14:44.161Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+  "org.springframework.boot:spring-boot-starter-security:3.4.4",
+  "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+  "org.springframework.boot:spring-boot-starter-web:3.4.4",
+  "io.jsonwebtoken:jjwt-api:0.12.6",
+  "io.jsonwebtoken:jjwt-impl:0.12.6",
+  "io.jsonwebtoken:jjwt-jackson:0.12.6",
+  "org.postgresql:postgresql:42.7.10",
+  "org.projectlombok:lombok:1.18.36",
+  "org.springframework.boot:spring-boot-starter-test:3.4.4",
+  "org.springframework.security:spring-security-test:6.4.4",
+  "com.h2database:h2:2.3.232"
+]
+2026-03-25T19:14:44.181Z [INFO] JDK: {
+  "name": "java",
+  "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+  "version": "21"
+}
+2026-03-25T19:14:44.181Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": ".",
+  "version": ""
+}
+2026-03-25T19:14:44.181Z [INFO] Project config: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": ""
+  },
+  "jdk": {
+    "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "edupulse_back",
+  "dir": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}
+2026-03-25T19:14:44.182Z [INFO] [Environment] Running command (Java undefined): mvnw dependency:tree -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:14:44.201Z [ERROR] [MavenBuildTool] Failed to get dependencies from dependency tree: Error: Failed to run command: "mvnw dependency:tree -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:14:44.202Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:14:44.221Z [ERROR] [MavenBuildTool] Failed to get dependencies from effective pom: Error: Failed to run command: "mvnw help:effective-pom -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:14:44.222Z [INFO] [MavenBuildTool] Getting Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back from pom.xml
+2026-03-25T19:14:44.222Z [INFO] [MavenBuildTool] Searching for pom.xml files in /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:14:44.222Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:14:44.222Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:14:44.222Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-ff00b53f-b867-4951-8cc6-bd8e6d037bb1.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:14:44.242Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-ff00b53f-b867-4951-8cc6-bd8e6d037bb1.log'
+2026-03-25T19:14:44.242Z [INFO] [MavenBuildTool] Found pom.xml files: 
+2026-03-25T19:14:44.242Z [INFO] [Environment] Running command (Java undefined): mvnw help:evaluate -Dexpression=project.properties -q -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:14:44.263Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:14:44.283Z [ERROR] [MavenBuildTool] Failed to get Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:14:44.310Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:14:44.310Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:14:44.310Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-19850224-20e2-4325-9563-f5365a10f116.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:14:44.330Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-19850224-20e2-4325-9563-f5365a10f116.log'
+2026-03-25T19:14:44.528Z [INFO] Fetched 0 total advisories across all pages
+2026-03-25T19:14:44.529Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-03-25T19:14:44.529Z [INFO] done getting 0 CVEs for 12 dependencies
+2026-03-25T19:14:44.529Z [INFO] calculating patched version by dep...
+2026-03-25T19:14:44.529Z [INFO] finished getting CVEs for dependencies.
+2026-03-25T19:14:44.530Z [INFO] Found 0 dependencies with known CVEs
+2026-03-25T19:14:44.531Z [INFO] No known CVEs that need to be fixed are found for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:14:44.531Z [INFO] [Tool.invoke]({result: {
+  "message": "No known CVEs that need to be fixed are found for the given dependencies."
+}}).
+2026-03-25T19:14:44.532Z [INFO] ----------------------invoked validate_cves_for_java----------------------
+2026-03-25T19:15:02.956Z [INFO] ---------------------prepare validate_cves_for_java----------------------
+2026-03-25T19:15:02.956Z [INFO] [Tool.prepareInvocation]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:15:02.956Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T19:15:02.956Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Validate CVEs"
+}}).
+2026-03-25T19:15:02.956Z [INFO] ----------------------prepared validate_cves_for_java----------------------
+2026-03-25T19:15:03.039Z [INFO] ----------------------invoke validate_cves_for_java----------------------
+2026-03-25T19:15:03.039Z [INFO] [Tool.invoke]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+    "org.springframework.boot:spring-boot-starter-security:3.4.4",
+    "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+    "org.springframework.boot:spring-boot-starter-web:3.4.4",
+    "io.jsonwebtoken:jjwt-api:0.12.6",
+    "io.jsonwebtoken:jjwt-impl:0.12.6",
+    "io.jsonwebtoken:jjwt-jackson:0.12.6",
+    "org.postgresql:postgresql:42.7.10",
+    "org.projectlombok:lombok:1.18.36",
+    "org.springframework.boot:spring-boot-starter-test:3.4.4",
+    "org.springframework.security:spring-security-test:6.4.4",
+    "com.h2database:h2:2.3.232"
+  ],
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944"
+}}).
+2026-03-25T19:15:03.039Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T19:15:03.039Z [INFO] Project /home/soporte/Desarrollos/vscode/edupulse/edupulse_back is a maven project, try to get java version from pom.xml
+2026-03-25T19:15:03.039Z [INFO] Getting CVEs for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:15:03.039Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-data-jpa:3.4.4
+  - org.springframework.boot:spring-boot-starter-security:3.4.4
+  - org.springframework.boot:spring-boot-starter-validation:3.4.4
+  - org.springframework.boot:spring-boot-starter-web:3.4.4
+  - io.jsonwebtoken:jjwt-api:0.12.6
+  - io.jsonwebtoken:jjwt-impl:0.12.6
+  - io.jsonwebtoken:jjwt-jackson:0.12.6
+  - org.postgresql:postgresql:42.7.10
+  - org.projectlombok:lombok:1.18.36
+  - org.springframework.boot:spring-boot-starter-test:3.4.4
+  - org.springframework.security:spring-security-test:6.4.4
+  - com.h2database:h2:2.3.232...
+2026-03-25T19:15:03.039Z [INFO] getting gitHub access token...
+2026-03-25T19:15:03.040Z [INFO] Project java version: 21
+2026-03-25T19:15:03.040Z [INFO] Maven project detected.
+2026-03-25T19:15:03.040Z [INFO] Build tool type: mvnw
+2026-03-25T19:15:03.041Z [INFO] Processing batch 1/1, size: 12
+2026-03-25T19:15:03.041Z [INFO] Proxy configuration: HTTPS_PROXY=(not set), HTTP_PROXY=(not set), NO_PROXY=(not set), NODE_EXTRA_CA_CERTS=(not set), vscode http.proxy=(not set), hasProxy=false
+2026-03-25T19:15:03.041Z [INFO] No proxy detected, using direct connection.
+2026-03-25T19:15:03.042Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.4",
+  "org.springframework.boot:spring-boot-starter-security:3.4.4",
+  "org.springframework.boot:spring-boot-starter-validation:3.4.4",
+  "org.springframework.boot:spring-boot-starter-web:3.4.4",
+  "io.jsonwebtoken:jjwt-api:0.12.6",
+  "io.jsonwebtoken:jjwt-impl:0.12.6",
+  "io.jsonwebtoken:jjwt-jackson:0.12.6",
+  "org.postgresql:postgresql:42.7.10",
+  "org.projectlombok:lombok:1.18.36",
+  "org.springframework.boot:spring-boot-starter-test:3.4.4",
+  "org.springframework.security:spring-security-test:6.4.4",
+  "com.h2database:h2:2.3.232"
+]
+2026-03-25T19:15:03.061Z [INFO] JDK: {
+  "name": "java",
+  "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+  "version": "21"
+}
+2026-03-25T19:15:03.061Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": ".",
+  "version": ""
+}
+2026-03-25T19:15:03.061Z [INFO] Project config: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": ""
+  },
+  "jdk": {
+    "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "edupulse_back",
+  "dir": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}
+2026-03-25T19:15:03.061Z [INFO] [Environment] Running command (Java undefined): mvnw dependency:tree -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:15:03.081Z [ERROR] [MavenBuildTool] Failed to get dependencies from dependency tree: Error: Failed to run command: "mvnw dependency:tree -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:15:03.081Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -B
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:15:03.101Z [ERROR] [MavenBuildTool] Failed to get dependencies from effective pom: Error: Failed to run command: "mvnw help:effective-pom -B" with error code 127
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:15:03.101Z [INFO] [MavenBuildTool] Getting Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back from pom.xml
+2026-03-25T19:15:03.101Z [INFO] [MavenBuildTool] Searching for pom.xml files in /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:15:03.101Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:15:03.101Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:15:03.102Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-100eaa28-9887-4daa-8746-42cebf940b7e.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:15:03.121Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-100eaa28-9887-4daa-8746-42cebf940b7e.log'
+2026-03-25T19:15:03.121Z [INFO] [MavenBuildTool] Found pom.xml files: 
+2026-03-25T19:15:03.121Z [INFO] [Environment] Running command (Java undefined): mvnw help:evaluate -Dexpression=project.properties -q -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:15:03.141Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -DforceStdout
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:15:03.162Z [ERROR] [MavenBuildTool] Failed to get Java version of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:15:03.199Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:15:03.199Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T19:15:03.199Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-349f1db3-9d53-4ecf-9b4c-0cfbf837611f.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T19:15:03.219Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-349f1db3-9d53-4ecf-9b4c-0cfbf837611f.log'
+2026-03-25T19:15:03.414Z [INFO] Fetched 0 total advisories across all pages
+2026-03-25T19:15:03.414Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-03-25T19:15:03.415Z [INFO] done getting 0 CVEs for 12 dependencies
+2026-03-25T19:15:03.415Z [INFO] calculating patched version by dep...
+2026-03-25T19:15:03.415Z [INFO] finished getting CVEs for dependencies.
+2026-03-25T19:15:03.415Z [INFO] Found 0 dependencies with known CVEs
+2026-03-25T19:15:03.417Z [INFO] No known CVEs that need to be fixed are found for dependencies: org.springframework.boot:spring-boot-starter-data-jpa:3.4.4,org.springframework.boot:spring-boot-starter-security:3.4.4,org.springframework.boot:spring-boot-starter-validation:3.4.4,org.springframework.boot:spring-boot-starter-web:3.4.4,io.jsonwebtoken:jjwt-api:0.12.6,io.jsonwebtoken:jjwt-impl:0.12.6,io.jsonwebtoken:jjwt-jackson:0.12.6,org.postgresql:postgresql:42.7.10,org.projectlombok:lombok:1.18.36,org.springframework.boot:spring-boot-starter-test:3.4.4,org.springframework.security:spring-security-test:6.4.4,com.h2database:h2:2.3.232
+2026-03-25T19:15:03.417Z [INFO] [Tool.invoke]({result: {
+  "message": "No known CVEs that need to be fixed are found for the given dependencies."
+}}).
+2026-03-25T19:15:03.417Z [INFO] ----------------------invoked validate_cves_for_java----------------------
