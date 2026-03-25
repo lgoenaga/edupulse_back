@@ -1,0 +1,548 @@
+2026-03-25T18:49:44.523Z [INFO] ----------------------invoke report_event----------------------
+2026-03-25T18:49:44.523Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "event": "precheckCompleted",
+  "phase": "precheck",
+  "status": "succeeded"
+}}).
+2026-03-25T18:49:44.523Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T18:49:44.530Z [INFO] Project /home/soporte/Desarrollos/vscode/edupulse/edupulse_back is a maven project, try to get java version from pom.xml
+2026-03-25T18:49:44.532Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'precheckCompleted' reported!\nSession ID: 20260325184944,\nSession Dir: /home/soporte/Desarrollos/vscode/edupulse/edupulse_back/.github/java-upgrade/20260325184944"
+}}).
+2026-03-25T18:49:44.532Z [INFO] ----------------------invoked report_event----------------------
+2026-03-25T18:49:44.536Z [INFO] Project java version: 17
+2026-03-25T18:49:44.536Z [INFO] Maven project detected.
+2026-03-25T18:49:44.538Z [INFO] Build tool type: mvnw
+2026-03-25T18:49:44.991Z [INFO] JDK: {
+  "name": "java",
+  "path": "/usr/lib/jvm/java-17-openjdk-amd64/bin",
+  "version": "17"
+}
+2026-03-25T18:49:44.991Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": ".",
+  "version": ""
+}
+2026-03-25T18:49:44.991Z [INFO] Project config: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": ""
+  },
+  "jdk": {
+    "path": "/usr/lib/jvm/java-17-openjdk-amd64/bin",
+    "name": "java",
+    "version": "17"
+  },
+  "name": "edupulse_back",
+  "dir": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}
+2026-03-25T18:49:55.395Z [INFO] ---------------------prepare report_event----------------------
+2026-03-25T18:49:55.395Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "event": "planGenerationStarted",
+  "phase": "plan",
+  "sessionId": "20260325184944",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "status": "succeeded"
+}}).
+2026-03-25T18:49:55.395Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T18:49:55.395Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-25T18:49:55.395Z [INFO] ----------------------prepared report_event----------------------
+2026-03-25T18:49:55.516Z [INFO] ----------------------invoke report_event----------------------
+2026-03-25T18:49:55.516Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "event": "planGenerationStarted",
+  "phase": "plan",
+  "sessionId": "20260325184944",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "status": "succeeded"
+}}).
+2026-03-25T18:49:55.516Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T18:49:55.516Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planGenerationStarted' reported!\nSession ID: 20260325184944,\nSession Dir: /home/soporte/Desarrollos/vscode/edupulse/edupulse_back/.github/java-upgrade/20260325184944"
+}}).
+2026-03-25T18:49:55.516Z [INFO] ----------------------invoked report_event----------------------
+2026-03-25T18:50:27.307Z [INFO] ---------------------prepare report_event----------------------
+2026-03-25T18:50:27.307Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "event": "planInitialized",
+  "phase": "plan",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T18:50:27.311Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T18:50:27.312Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-25T18:50:27.313Z [INFO] ----------------------prepared report_event----------------------
+2026-03-25T18:50:27.655Z [INFO] ----------------------invoke report_event----------------------
+2026-03-25T18:50:27.655Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "event": "planInitialized",
+  "phase": "plan",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T18:50:27.655Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T18:50:27.655Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planInitialized' reported!\nSession ID: 20260325184944,\nSession Dir: /home/soporte/Desarrollos/vscode/edupulse/edupulse_back/.github/java-upgrade/20260325184944"
+}}).
+2026-03-25T18:50:27.655Z [INFO] ----------------------invoked report_event----------------------
+2026-03-25T18:50:32.659Z [INFO] ---------------------prepare list_jdks----------------------
+2026-03-25T18:50:32.659Z [INFO] [Tool.prepareInvocation]({name: list_jdks, input: {
+  "sessionId": "20260325184944",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}}).
+2026-03-25T18:50:32.659Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T18:50:32.659Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "List jdks"
+}}).
+2026-03-25T18:50:32.659Z [INFO] ----------------------prepared list_jdks----------------------
+2026-03-25T18:50:32.766Z [INFO] ----------------------invoke list_jdks----------------------
+2026-03-25T18:50:32.766Z [INFO] [Tool.invoke]({name: list_jdks, input: {
+  "sessionId": "20260325184944",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}}).
+2026-03-25T18:50:32.766Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T18:50:32.785Z [INFO] [Tool.invoke]({result: {
+  "message": "We found following jdks in your system:\n\n1. Java 17.0.18\n   📁 Path: /usr/lib/jvm/java-17-openjdk-amd64/bin\n   🏷️ Source: PATH,JAVA_HOME\n\n2. Java 17.0.18\n   📁 Path: /usr/lib/jvm/java-1.17.0-openjdk-amd64/bin\n   🏷️ Source: others\n\n3. Java 21.0.8\n   📁 Path: /home/soporte/.jdk/jdk-21.0.8/bin\n   🏷️ Source: install\n\nTotal: 3 JDK installation(s) found"
+}}).
+2026-03-25T18:50:32.785Z [INFO] ----------------------invoked list_jdks----------------------
+2026-03-25T18:50:32.803Z [INFO] ---------------------prepare list_mavens----------------------
+2026-03-25T18:50:32.803Z [INFO] [Tool.prepareInvocation]({name: list_mavens, input: {
+  "sessionId": "20260325184944",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}}).
+2026-03-25T18:50:32.803Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T18:50:32.803Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "List mavens"
+}}).
+2026-03-25T18:50:32.803Z [INFO] ----------------------prepared list_mavens----------------------
+2026-03-25T18:50:32.945Z [INFO] ----------------------invoke list_mavens----------------------
+2026-03-25T18:50:32.945Z [INFO] [Tool.invoke]({name: list_mavens, input: {
+  "sessionId": "20260325184944",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}}).
+2026-03-25T18:50:32.945Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T18:50:32.949Z [INFO] [Tool.invoke]({result: {
+  "message": "We found following maven installations in your system:\n\n1. 📁 Path: /usr/share/maven/bin\n   🏷️ Source: PATH,others\n\nTotal: 1 Maven installation(s) found"
+}}).
+2026-03-25T18:50:32.949Z [INFO] ----------------------invoked list_mavens----------------------
+2026-03-25T18:50:48.847Z [INFO] ---------------------prepare report_event----------------------
+2026-03-25T18:50:48.847Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "event": "environmentAnalyzed",
+  "phase": "plan",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T18:50:48.847Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T18:50:48.847Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-25T18:50:48.847Z [INFO] ----------------------prepared report_event----------------------
+2026-03-25T18:50:49.064Z [INFO] ----------------------invoke report_event----------------------
+2026-03-25T18:50:49.064Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "event": "environmentAnalyzed",
+  "phase": "plan",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T18:50:49.064Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T18:50:49.064Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'environmentAnalyzed' reported!\nSession ID: 20260325184944,\nSession Dir: /home/soporte/Desarrollos/vscode/edupulse/edupulse_back/.github/java-upgrade/20260325184944"
+}}).
+2026-03-25T18:50:49.064Z [INFO] ----------------------invoked report_event----------------------
+2026-03-25T18:51:14.262Z [INFO] ---------------------prepare report_event----------------------
+2026-03-25T18:51:14.262Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "event": "dependenciesAnalyzed",
+  "phase": "plan",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T18:51:14.262Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T18:51:14.263Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-25T18:51:14.263Z [INFO] ----------------------prepared report_event----------------------
+2026-03-25T18:51:14.447Z [INFO] ----------------------invoke report_event----------------------
+2026-03-25T18:51:14.447Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "event": "dependenciesAnalyzed",
+  "phase": "plan",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T18:51:14.447Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T18:51:14.447Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'dependenciesAnalyzed' reported!\nSession ID: 20260325184944,\nSession Dir: /home/soporte/Desarrollos/vscode/edupulse/edupulse_back/.github/java-upgrade/20260325184944"
+}}).
+2026-03-25T18:51:14.447Z [INFO] ----------------------invoked report_event----------------------
+2026-03-25T18:54:04.625Z [INFO] ---------------------prepare report_event----------------------
+2026-03-25T18:54:04.625Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "event": "upgradePathDesigned",
+  "phase": "plan",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T18:54:04.625Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T18:54:04.625Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-25T18:54:04.625Z [INFO] ----------------------prepared report_event----------------------
+2026-03-25T18:54:05.991Z [INFO] ----------------------invoke report_event----------------------
+2026-03-25T18:54:05.991Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "event": "upgradePathDesigned",
+  "phase": "plan",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T18:54:05.991Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T18:54:05.992Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'upgradePathDesigned' reported!\nSession ID: 20260325184944,\nSession Dir: /home/soporte/Desarrollos/vscode/edupulse/edupulse_back/.github/java-upgrade/20260325184944"
+}}).
+2026-03-25T18:54:05.992Z [INFO] ----------------------invoked report_event----------------------
+2026-03-25T18:54:14.006Z [INFO] ---------------------prepare report_event----------------------
+2026-03-25T18:54:14.006Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "event": "planReviewed",
+  "phase": "plan",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T18:54:14.006Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T18:54:14.007Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-25T18:54:14.007Z [INFO] ----------------------prepared report_event----------------------
+2026-03-25T18:54:18.081Z [INFO] ----------------------invoke report_event----------------------
+2026-03-25T18:54:18.081Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "event": "planReviewed",
+  "phase": "plan",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T18:54:18.081Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T18:54:18.081Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planReviewed' reported!\nSession ID: 20260325184944,\nSession Dir: /home/soporte/Desarrollos/vscode/edupulse/edupulse_back/.github/java-upgrade/20260325184944"
+}}).
+2026-03-25T18:54:18.081Z [INFO] ----------------------invoked report_event----------------------
+2026-03-25T18:55:29.080Z [INFO] ---------------------prepare report_event----------------------
+2026-03-25T18:55:29.080Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "event": "planExecutionStarted",
+  "phase": "execute",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T18:55:29.080Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T18:55:29.080Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-25T18:55:29.080Z [INFO] ----------------------prepared report_event----------------------
+2026-03-25T18:55:29.176Z [INFO] ----------------------invoke report_event----------------------
+2026-03-25T18:55:29.176Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "event": "planExecutionStarted",
+  "phase": "execute",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T18:55:29.176Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T18:55:29.196Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planExecutionStarted' reported!\nSession ID: 20260325184944,\nSession Dir: /home/soporte/Desarrollos/vscode/edupulse/edupulse_back/.github/java-upgrade/20260325184944"
+}}).
+2026-03-25T18:55:29.196Z [INFO] ----------------------invoked report_event----------------------
+2026-03-25T18:56:07.376Z [INFO] ---------------------prepare report_event----------------------
+2026-03-25T18:56:07.377Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "event": "environmentSetup",
+  "phase": "execute",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded",
+  "details": {
+    "jdkPath": "/home/soporte/.jdk/jdk-21.0.8/bin",
+    "buildToolPath": "."
+  }
+}}).
+2026-03-25T18:56:07.377Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T18:56:07.377Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-25T18:56:07.377Z [INFO] ----------------------prepared report_event----------------------
+2026-03-25T18:56:07.608Z [INFO] ----------------------invoke report_event----------------------
+2026-03-25T18:56:07.608Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "event": "environmentSetup",
+  "phase": "execute",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded",
+  "details": {
+    "jdkPath": "/home/soporte/.jdk/jdk-21.0.8/bin",
+    "buildToolPath": "."
+  }
+}}).
+2026-03-25T18:56:07.608Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T18:56:07.610Z [INFO] Project /home/soporte/Desarrollos/vscode/edupulse/edupulse_back is a maven project, try to get java version from pom.xml
+2026-03-25T18:56:07.610Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'environmentSetup' reported!\nSession ID: 20260325184944,\nSession Dir: /home/soporte/Desarrollos/vscode/edupulse/edupulse_back/.github/java-upgrade/20260325184944"
+}}).
+2026-03-25T18:56:07.610Z [INFO] ----------------------invoked report_event----------------------
+2026-03-25T18:56:07.616Z [INFO] Project java version: 17
+2026-03-25T18:56:07.617Z [INFO] Maven project detected.
+2026-03-25T18:56:07.617Z [INFO] Build tool type: mvnw
+2026-03-25T18:56:07.617Z [INFO] JDK: {
+  "name": "java",
+  "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+  "version": "17"
+}
+2026-03-25T18:56:07.617Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": ".",
+  "version": ""
+}
+2026-03-25T18:56:07.618Z [INFO] Project config: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": ""
+  },
+  "jdk": {
+    "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+    "name": "java",
+    "version": "17"
+  },
+  "name": "edupulse_back",
+  "dir": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}
+2026-03-25T18:57:37.375Z [INFO] ---------------------prepare report_event----------------------
+2026-03-25T18:57:37.375Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "event": "buildCompleted",
+  "phase": "execute",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T18:57:37.375Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T18:57:37.376Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-25T18:57:37.376Z [INFO] ----------------------prepared report_event----------------------
+2026-03-25T18:57:37.510Z [INFO] ----------------------invoke report_event----------------------
+2026-03-25T18:57:37.510Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "event": "buildCompleted",
+  "phase": "execute",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T18:57:37.510Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T18:57:37.510Z [INFO] Project /home/soporte/Desarrollos/vscode/edupulse/edupulse_back is a maven project, try to get java version from pom.xml
+2026-03-25T18:57:37.511Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'buildCompleted' reported!\nSession ID: 20260325184944,\nSession Dir: /home/soporte/Desarrollos/vscode/edupulse/edupulse_back/.github/java-upgrade/20260325184944"
+}}).
+2026-03-25T18:57:37.511Z [INFO] ----------------------invoked report_event----------------------
+2026-03-25T18:57:37.527Z [INFO] Project java version: 17
+2026-03-25T18:57:37.527Z [INFO] Maven project detected.
+2026-03-25T18:57:37.527Z [INFO] Build tool type: mvnw
+2026-03-25T18:57:37.776Z [INFO] JDK: {
+  "name": "java",
+  "path": "/usr/lib/jvm/java-17-openjdk-amd64/bin",
+  "version": "17"
+}
+2026-03-25T18:57:37.777Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": ".",
+  "version": ""
+}
+2026-03-25T18:57:37.777Z [INFO] Project config: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": ""
+  },
+  "jdk": {
+    "path": "/usr/lib/jvm/java-17-openjdk-amd64/bin",
+    "name": "java",
+    "version": "17"
+  },
+  "name": "edupulse_back",
+  "dir": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}
+2026-03-25T18:57:37.777Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T18:57:37.777Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T18:57:37.777Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-fc2842f1-f0b0-475d-9974-13a902781692.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T18:57:37.859Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-fc2842f1-f0b0-475d-9974-13a902781692.log'
+2026-03-25T18:57:37.859Z [INFO] [BaseBuildTool] Found 0 modules: 
+2026-03-25T18:57:37.861Z [INFO] [BaseBuildTool] Finish counting Java and class files
+2026-03-25T18:57:37.861Z [INFO] [MavenBuildTool] Cleaning /home/soporte/Desarrollos/vscode/edupulse/edupulse_back using Maven
+2026-03-25T18:57:37.862Z [INFO] [Environment] Running command (Java undefined): mvnw clean -q -B -fn
+/bin/sh: 1: mvnw: not found
+2026-03-25T18:57:37.889Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T18:57:37.889Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T18:57:37.889Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-a895d1cc-3354-439d-a666-4126854622dc.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T18:57:37.908Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-a895d1cc-3354-439d-a666-4126854622dc.log'
+2026-03-25T18:57:44.186Z [INFO] ---------------------prepare report_event----------------------
+2026-03-25T18:57:44.186Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "event": "testCompleted",
+  "phase": "execute",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T18:57:44.186Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T18:57:44.186Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-25T18:57:44.186Z [INFO] ----------------------prepared report_event----------------------
+2026-03-25T18:57:44.277Z [INFO] ----------------------invoke report_event----------------------
+2026-03-25T18:57:44.277Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "event": "testCompleted",
+  "phase": "execute",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T18:57:44.277Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T18:57:44.277Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'testCompleted' reported!\nSession ID: 20260325184944,\nSession Dir: /home/soporte/Desarrollos/vscode/edupulse/edupulse_back/.github/java-upgrade/20260325184944"
+}}).
+2026-03-25T18:57:44.277Z [INFO] ----------------------invoked report_event----------------------
+2026-03-25T18:57:48.330Z [INFO] ---------------------prepare report_event----------------------
+2026-03-25T18:57:48.330Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "event": "baselineSetup",
+  "phase": "execute",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T18:57:48.330Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T18:57:48.330Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-25T18:57:48.330Z [INFO] ----------------------prepared report_event----------------------
+2026-03-25T18:57:48.422Z [INFO] ----------------------invoke report_event----------------------
+2026-03-25T18:57:48.422Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "event": "baselineSetup",
+  "phase": "execute",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T18:57:48.422Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T18:57:48.422Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'baselineSetup' reported!\nSession ID: 20260325184944,\nSession Dir: /home/soporte/Desarrollos/vscode/edupulse/edupulse_back/.github/java-upgrade/20260325184944"
+}}).
+2026-03-25T18:57:48.422Z [INFO] ----------------------invoked report_event----------------------
+2026-03-25T18:57:59.778Z [INFO] ---------------------prepare report_event----------------------
+2026-03-25T18:57:59.778Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "details": {
+    "stepNumber": 3,
+    "stepTitle": "Upgrade Java 17 → 21"
+  },
+  "event": "upgradeStepStarted",
+  "phase": "execute",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T18:57:59.778Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T18:57:59.778Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-25T18:57:59.778Z [INFO] ----------------------prepared report_event----------------------
+2026-03-25T18:57:59.870Z [INFO] ----------------------invoke report_event----------------------
+2026-03-25T18:57:59.870Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "details": {
+    "stepNumber": 3,
+    "stepTitle": "Upgrade Java 17 → 21"
+  },
+  "event": "upgradeStepStarted",
+  "phase": "execute",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T18:57:59.870Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T18:57:59.871Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'upgradeStepStarted' reported!\nSession ID: 20260325184944,\nSession Dir: /home/soporte/Desarrollos/vscode/edupulse/edupulse_back/.github/java-upgrade/20260325184944"
+}}).
+2026-03-25T18:57:59.871Z [INFO] ----------------------invoked report_event----------------------
+2026-03-25T18:58:55.485Z [INFO] ---------------------prepare report_event----------------------
+2026-03-25T18:58:55.485Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "event": "buildCompleted",
+  "phase": "execute",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T18:58:55.485Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-25T18:58:55.485Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-25T18:58:55.485Z [INFO] ----------------------prepared report_event----------------------
+2026-03-25T18:58:55.583Z [INFO] ----------------------invoke report_event----------------------
+2026-03-25T18:58:55.584Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "event": "buildCompleted",
+  "phase": "execute",
+  "projectPath": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back",
+  "sessionId": "20260325184944",
+  "status": "succeeded"
+}}).
+2026-03-25T18:58:55.584Z [INFO] [Tool.invoke] do invoke.
+2026-03-25T18:58:55.584Z [INFO] Project /home/soporte/Desarrollos/vscode/edupulse/edupulse_back is a maven project, try to get java version from pom.xml
+2026-03-25T18:58:55.584Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'buildCompleted' reported!\nSession ID: 20260325184944,\nSession Dir: /home/soporte/Desarrollos/vscode/edupulse/edupulse_back/.github/java-upgrade/20260325184944"
+}}).
+2026-03-25T18:58:55.584Z [INFO] ----------------------invoked report_event----------------------
+2026-03-25T18:58:55.668Z [INFO] Project java version: 21
+2026-03-25T18:58:55.669Z [INFO] Maven project detected.
+2026-03-25T18:58:55.669Z [INFO] Build tool type: mvnw
+2026-03-25T18:58:55.686Z [INFO] JDK: {
+  "name": "java",
+  "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+  "version": "21"
+}
+2026-03-25T18:58:55.686Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": ".",
+  "version": ""
+}
+2026-03-25T18:58:55.686Z [INFO] Project config: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": ""
+  },
+  "jdk": {
+    "path": "/home/soporte/.jdk/jdk-21.0.8/bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "edupulse_back",
+  "dir": "/home/soporte/Desarrollos/vscode/edupulse/edupulse_back"
+}
+2026-03-25T18:58:55.686Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T18:58:55.686Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T18:58:55.686Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-a4170f72-a960-4f04-866b-da0dc1aefa38.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T18:58:55.706Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-a4170f72-a960-4f04-866b-da0dc1aefa38.log'
+2026-03-25T18:58:55.706Z [INFO] [BaseBuildTool] Found 0 modules: 
+2026-03-25T18:58:55.706Z [INFO] [BaseBuildTool] Finish counting Java and class files
+2026-03-25T18:58:55.706Z [INFO] [MavenBuildTool] Cleaning /home/soporte/Desarrollos/vscode/edupulse/edupulse_back using Maven
+2026-03-25T18:58:55.706Z [INFO] [Environment] Running command (Java undefined): mvnw clean -q -B -fn
+/bin/sh: 1: mvnw: not found
+2026-03-25T18:58:55.724Z [INFO] [MavenBuildTool] Getting all module coordinates of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T18:58:55.724Z [INFO] [MavenBuildTool] Getting effective POMs of /home/soporte/Desarrollos/vscode/edupulse/edupulse_back
+2026-03-25T18:58:55.725Z [INFO] [Environment] Running command (Java undefined): mvnw help:effective-pom -Doutput=effective-pom-61607018-42c0-48de-bd7e-6cb9fa60f5eb.log
+/bin/sh: 1: mvnw: not found
+2026-03-25T18:58:55.744Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open '/home/soporte/Desarrollos/vscode/edupulse/edupulse_back/effective-pom-61607018-42c0-48de-bd7e-6cb9fa60f5eb.log'
