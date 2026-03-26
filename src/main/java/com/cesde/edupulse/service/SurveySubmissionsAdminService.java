@@ -12,6 +12,7 @@ import com.cesde.edupulse.repository.SurveySubmissionRepository;
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
 import java.time.ZoneId;
+import java.time.ZoneOffset;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
@@ -30,6 +31,11 @@ import org.springframework.web.server.ResponseStatusException;
 @RequiredArgsConstructor
 public class SurveySubmissionsAdminService {
 
+    private static final OffsetDateTime UNUSED_SUBMITTED_FROM = OffsetDateTime.of(1970, 1, 1, 0, 0, 0, 0,
+            ZoneOffset.UTC);
+    private static final OffsetDateTime UNUSED_SUBMITTED_TO = OffsetDateTime.of(9999, 12, 31, 23, 59, 59, 0,
+            ZoneOffset.UTC);
+
     private final SurveySubmissionRepository surveySubmissionRepository;
     private final SurveyResponseRepository surveyResponseRepository;
 
@@ -39,13 +45,18 @@ public class SurveySubmissionsAdminService {
         validateDateRange(submittedFromDate, submittedToDate);
         validatePagination(page, size);
 
+        OffsetDateTime submittedFrom = toRangeStart(submittedFromDate);
+        OffsetDateTime submittedTo = toRangeEndExclusive(submittedToDate);
+
         Page<SurveySubmission> submissionsPage = surveySubmissionRepository.findAllForAdmin(
                 periodId,
                 groupId,
                 levelId,
                 studentId,
-                toRangeStart(submittedFromDate),
-                toRangeEndExclusive(submittedToDate),
+                submittedFrom != null,
+                submittedFrom != null ? submittedFrom : UNUSED_SUBMITTED_FROM,
+                submittedTo != null,
+                submittedTo != null ? submittedTo : UNUSED_SUBMITTED_TO,
                 PageRequest.of(page, size, Sort.by(Sort.Direction.DESC, "submittedAt")));
         List<SurveySubmission> submissions = submissionsPage.getContent();
         Map<Long, Long> responseCounts = getResponseCounts(submissions);

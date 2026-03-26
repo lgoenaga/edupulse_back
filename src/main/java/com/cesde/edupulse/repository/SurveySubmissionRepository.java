@@ -36,8 +36,8 @@ public interface SurveySubmissionRepository extends JpaRepository<SurveySubmissi
               and (:groupId is null or academicGroup.id = :groupId)
               and (:levelId is null or level.id = :levelId)
               and (:studentId is null or student.id = :studentId)
-              and (:submittedFrom is null or submission.submittedAt >= :submittedFrom)
-              and (:submittedTo is null or submission.submittedAt < :submittedTo)
+                                                        and (:applySubmittedFrom = false or submission.submittedAt >= :submittedFrom)
+                                                        and (:applySubmittedTo = false or submission.submittedAt < :submittedTo)
             """, countQuery = """
             select count(submission)
             from SurveySubmission submission
@@ -49,15 +49,17 @@ public interface SurveySubmissionRepository extends JpaRepository<SurveySubmissi
               and (:groupId is null or academicGroup.id = :groupId)
               and (:levelId is null or level.id = :levelId)
               and (:studentId is null or student.id = :studentId)
-              and (:submittedFrom is null or submission.submittedAt >= :submittedFrom)
-              and (:submittedTo is null or submission.submittedAt < :submittedTo)
+                                                        and (:applySubmittedFrom = false or submission.submittedAt >= :submittedFrom)
+                                                        and (:applySubmittedTo = false or submission.submittedAt < :submittedTo)
             """)
     Page<SurveySubmission> findAllForAdmin(
             @Param("periodId") Long periodId,
             @Param("groupId") Long groupId,
             @Param("levelId") Long levelId,
             @Param("studentId") Long studentId,
+            @Param("applySubmittedFrom") boolean applySubmittedFrom,
             @Param("submittedFrom") OffsetDateTime submittedFrom,
+            @Param("applySubmittedTo") boolean applySubmittedTo,
             @Param("submittedTo") OffsetDateTime submittedTo,
             Pageable pageable);
 
