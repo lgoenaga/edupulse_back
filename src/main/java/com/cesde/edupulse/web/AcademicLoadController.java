@@ -1,5 +1,6 @@
 package com.cesde.edupulse.web;
 
+import com.cesde.edupulse.dto.common.PageResponse;
 import com.cesde.edupulse.dto.catalog.AcademicLoadRequest;
 import com.cesde.edupulse.dto.catalog.AcademicLoadResponse;
 import com.cesde.edupulse.service.AcademicLoadService;
@@ -26,6 +27,13 @@ public class AcademicLoadController {
     @GetMapping
     public List<AcademicLoadResponse> findAll() {
         return academicLoadService.findAll();
+    }
+
+    @GetMapping("/paged")
+    public PageResponse<AcademicLoadResponse> findPage(
+            @org.springframework.web.bind.annotation.RequestParam(defaultValue = "0") int page,
+            @org.springframework.web.bind.annotation.RequestParam(defaultValue = "20") int size) {
+        return academicLoadService.findPage(page, size);
     }
 
     @PostMapping
