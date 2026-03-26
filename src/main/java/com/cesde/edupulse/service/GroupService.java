@@ -3,6 +3,7 @@ package com.cesde.edupulse.service;
 import com.cesde.edupulse.domain.model.AcademicGroup;
 import com.cesde.edupulse.domain.model.AcademicLevel;
 import com.cesde.edupulse.domain.model.Technique;
+import com.cesde.edupulse.dto.common.PageResponse;
 import com.cesde.edupulse.dto.catalog.AcademicGroupRequest;
 import com.cesde.edupulse.dto.catalog.AcademicGroupResponse;
 import com.cesde.edupulse.repository.AcademicGroupRepository;
@@ -13,6 +14,8 @@ import com.cesde.edupulse.repository.TechniqueRepository;
 import java.util.List;
 import java.util.Objects;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -33,6 +36,25 @@ public class GroupService {
         return academicGroupRepository.findAllByOrderByNameAsc().stream()
                 .map(this::toResponse)
                 .toList();
+    }
+
+    @Transactional(readOnly = true)
+    public PageResponse<AcademicGroupResponse> findPage(int page, int size) {
+        validatePagination(page, size);
+
+        Page<AcademicGroup> groupPage = academicGroupRepository.findAllByOrderByNameAsc(PageRequest.of(page, size));
+        List<AcademicGroupResponse> items = groupPage.getContent().stream()
+                .map(this::toResponse)
+                .toList();
+
+        return new PageResponse<>(
+                items,
+                groupPage.getNumber(),
+                groupPage.getSize(),
+                groupPage.getTotalElements(),
+                groupPage.getTotalPages(),
+                groupPage.isFirst(),
+                groupPage.isLast());
     }
 
     @Transactional
@@ -105,6 +127,17 @@ public class GroupService {
 
     private String normalizeName(String name) {
         return name == null ? "" : name.trim();
+    }
+
+    private void validatePagination(int page, int size) {
+        if (page < 0) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "La pagina no puede ser negativa");
+        }
+
+        if (size < 1 || size > 100) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST,
+                    "El tamano de pagina debe estar entre 1 y 100");
+        }
     }
 
     private AcademicGroupResponse toResponse(AcademicGroup group) {

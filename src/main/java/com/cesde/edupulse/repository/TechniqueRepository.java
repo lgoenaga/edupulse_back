@@ -2,10 +2,14 @@ package com.cesde.edupulse.repository;
 
 import com.cesde.edupulse.domain.model.Technique;
 import java.util.List;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface TechniqueRepository extends JpaRepository<Technique, Long> {
     List<Technique> findAllByOrderByNameAsc();
+
+    Page<Technique> findAllByOrderByNameAsc(Pageable pageable);
 
     boolean existsByCodeIgnoreCase(String code);
 

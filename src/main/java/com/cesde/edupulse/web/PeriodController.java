@@ -1,5 +1,6 @@
 package com.cesde.edupulse.web;
 
+import com.cesde.edupulse.dto.common.PageResponse;
 import com.cesde.edupulse.dto.catalog.AcademicPeriodRequest;
 import com.cesde.edupulse.dto.catalog.AcademicPeriodResponse;
 import com.cesde.edupulse.service.PeriodService;
@@ -26,6 +27,13 @@ public class PeriodController {
     @GetMapping
     public List<AcademicPeriodResponse> findAll() {
         return periodService.findAll();
+    }
+
+    @GetMapping("/paged")
+    public PageResponse<AcademicPeriodResponse> findPage(
+            @org.springframework.web.bind.annotation.RequestParam(defaultValue = "0") int page,
+            @org.springframework.web.bind.annotation.RequestParam(defaultValue = "20") int size) {
+        return periodService.findPage(page, size);
     }
 
     @PostMapping

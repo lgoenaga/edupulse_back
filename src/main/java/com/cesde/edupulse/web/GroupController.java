@@ -1,5 +1,6 @@
 package com.cesde.edupulse.web;
 
+import com.cesde.edupulse.dto.common.PageResponse;
 import com.cesde.edupulse.dto.catalog.AcademicGroupRequest;
 import com.cesde.edupulse.dto.catalog.AcademicGroupResponse;
 import com.cesde.edupulse.service.GroupService;
@@ -26,6 +27,13 @@ public class GroupController {
     @GetMapping
     public List<AcademicGroupResponse> findAll() {
         return groupService.findAll();
+    }
+
+    @GetMapping("/paged")
+    public PageResponse<AcademicGroupResponse> findPage(
+            @org.springframework.web.bind.annotation.RequestParam(defaultValue = "0") int page,
+            @org.springframework.web.bind.annotation.RequestParam(defaultValue = "20") int size) {
+        return groupService.findPage(page, size);
     }
 
     @PostMapping

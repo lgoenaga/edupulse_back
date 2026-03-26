@@ -1,6 +1,7 @@
 package com.cesde.edupulse.service;
 
 import com.cesde.edupulse.domain.model.AcademicPeriod;
+import com.cesde.edupulse.dto.common.PageResponse;
 import com.cesde.edupulse.dto.catalog.AcademicPeriodRequest;
 import com.cesde.edupulse.dto.catalog.AcademicPeriodResponse;
 import com.cesde.edupulse.repository.AcademicPeriodRepository;
@@ -8,6 +9,8 @@ import com.cesde.edupulse.repository.SurveySubmissionRepository;
 import java.util.List;
 import java.util.Objects;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,10 +23,31 @@ public class PeriodService {
     private final AcademicPeriodRepository academicPeriodRepository;
     private final SurveySubmissionRepository surveySubmissionRepository;
 
+    @Transactional(readOnly = true)
     public List<AcademicPeriodResponse> findAll() {
-        return academicPeriodRepository.findAll().stream()
+        return academicPeriodRepository.findAllByOrderByYearDescTermNumberDesc().stream()
                 .map(this::toResponse)
                 .toList();
+    }
+
+    @Transactional(readOnly = true)
+    public PageResponse<AcademicPeriodResponse> findPage(int page, int size) {
+        validatePagination(page, size);
+
+        Page<AcademicPeriod> periodPage = academicPeriodRepository.findAllByOrderByYearDescTermNumberDesc(
+                PageRequest.of(page, size));
+        List<AcademicPeriodResponse> items = periodPage.getContent().stream()
+                .map(this::toResponse)
+                .toList();
+
+        return new PageResponse<>(
+                items,
+                periodPage.getNumber(),
+                periodPage.getSize(),
+                periodPage.getTotalElements(),
+                periodPage.getTotalPages(),
+                periodPage.isFirst(),
+                periodPage.isLast());
     }
 
     @Transactional
@@ -38,7 +62,7 @@ public class PeriodService {
                 .startDate(request.startDate())
                 .endDate(request.endDate())
                 .active(request.active())
-            .build()));
+                .build()));
 
         return toResponse(saved);
     }
@@ -110,5 +134,16 @@ public class PeriodService {
                 period.getStartDate(),
                 period.getEndDate(),
                 period.isActive());
+    }
+
+    private void validatePagination(int page, int size) {
+        if (page < 0) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "La pagina no puede ser negativa");
+        }
+
+        if (size < 1 || size > 100) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST,
+                    "El tamano de pagina debe estar entre 1 y 100");
+        }
     }
 }

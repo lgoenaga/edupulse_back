@@ -1,5 +1,6 @@
 package com.cesde.edupulse.web;
 
+import com.cesde.edupulse.dto.common.PageResponse;
 import com.cesde.edupulse.dto.catalog.TechniqueRequest;
 import com.cesde.edupulse.dto.catalog.TechniqueResponse;
 import com.cesde.edupulse.service.TechniqueService;
@@ -26,6 +27,13 @@ public class TechniqueController {
     @GetMapping
     public List<TechniqueResponse> findAll() {
         return techniqueService.findAll();
+    }
+
+    @GetMapping("/paged")
+    public PageResponse<TechniqueResponse> findPage(
+            @org.springframework.web.bind.annotation.RequestParam(defaultValue = "0") int page,
+            @org.springframework.web.bind.annotation.RequestParam(defaultValue = "20") int size) {
+        return techniqueService.findPage(page, size);
     }
 
     @PostMapping
