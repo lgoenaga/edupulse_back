@@ -3,11 +3,12 @@ package com.cesde.edupulse.repository;
 import com.cesde.edupulse.domain.model.SurveySubmission;
 import java.time.OffsetDateTime;
 import java.util.Optional;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
-
-import java.util.List;
 
 public interface SurveySubmissionRepository extends JpaRepository<SurveySubmission, Long> {
     Optional<SurveySubmission> findByStudentIdAndPeriodId(Long studentId, Long periodId);
@@ -16,29 +17,49 @@ public interface SurveySubmissionRepository extends JpaRepository<SurveySubmissi
 
     boolean existsByStudentId(Long studentId);
 
-    @Query("""
+    @EntityGraph(attributePaths = {
+            "student",
+            "student.group",
+            "student.group.level",
+            "student.group.technique",
+            "period"
+    })
+    @Query(value = """
             select submission
             from SurveySubmission submission
-            join fetch submission.student student
-            join fetch student.group academicGroup
-            join fetch academicGroup.level level
-            join fetch academicGroup.technique technique
-            join fetch submission.period period
+            join submission.student student
+            join student.group academicGroup
+            join academicGroup.level level
+            join academicGroup.technique technique
+            join submission.period period
             where (:periodId is null or period.id = :periodId)
               and (:groupId is null or academicGroup.id = :groupId)
               and (:levelId is null or level.id = :levelId)
               and (:studentId is null or student.id = :studentId)
               and (:submittedFrom is null or submission.submittedAt >= :submittedFrom)
               and (:submittedTo is null or submission.submittedAt < :submittedTo)
-            order by submission.submittedAt desc
+            """, countQuery = """
+            select count(submission)
+            from SurveySubmission submission
+            join submission.student student
+            join student.group academicGroup
+            join academicGroup.level level
+            join submission.period period
+            where (:periodId is null or period.id = :periodId)
+              and (:groupId is null or academicGroup.id = :groupId)
+              and (:levelId is null or level.id = :levelId)
+              and (:studentId is null or student.id = :studentId)
+              and (:submittedFrom is null or submission.submittedAt >= :submittedFrom)
+              and (:submittedTo is null or submission.submittedAt < :submittedTo)
             """)
-    List<SurveySubmission> findAllForAdmin(
+    Page<SurveySubmission> findAllForAdmin(
             @Param("periodId") Long periodId,
             @Param("groupId") Long groupId,
             @Param("levelId") Long levelId,
             @Param("studentId") Long studentId,
             @Param("submittedFrom") OffsetDateTime submittedFrom,
-            @Param("submittedTo") OffsetDateTime submittedTo);
+            @Param("submittedTo") OffsetDateTime submittedTo,
+            Pageable pageable);
 
     @Query("""
             select submission

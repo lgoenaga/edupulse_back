@@ -4,6 +4,7 @@ import com.cesde.edupulse.domain.enums.RoleType;
 import com.cesde.edupulse.domain.model.AcademicGroup;
 import com.cesde.edupulse.domain.model.AppUser;
 import com.cesde.edupulse.domain.model.Student;
+import com.cesde.edupulse.dto.common.PageResponse;
 import com.cesde.edupulse.dto.catalog.StudentRequest;
 import com.cesde.edupulse.dto.catalog.StudentResponse;
 import com.cesde.edupulse.repository.AcademicGroupRepository;
@@ -14,6 +15,8 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -35,6 +38,26 @@ public class StudentAdminService {
         return studentRepository.findAllByOrderByFirstNameAscLastNameAsc().stream()
                 .map(this::toResponse)
                 .toList();
+    }
+
+    @Transactional(readOnly = true)
+    public PageResponse<StudentResponse> findPage(int page, int size) {
+        validatePagination(page, size);
+
+        Page<Student> studentPage = studentRepository
+                .findAllByOrderByFirstNameAscLastNameAsc(PageRequest.of(page, size));
+        List<StudentResponse> items = studentPage.getContent().stream()
+                .map(this::toResponse)
+                .toList();
+
+        return new PageResponse<>(
+                items,
+                studentPage.getNumber(),
+                studentPage.getSize(),
+                studentPage.getTotalElements(),
+                studentPage.getTotalPages(),
+                studentPage.isFirst(),
+                studentPage.isLast());
     }
 
     @Transactional
@@ -170,6 +193,17 @@ public class StudentAdminService {
 
     private String buildFullName(String firstName, String lastName) {
         return (firstName + " " + lastName).trim();
+    }
+
+    private void validatePagination(int page, int size) {
+        if (page < 0) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "La pagina no puede ser negativa");
+        }
+
+        if (size < 1 || size > 100) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST,
+                    "El tamano de pagina debe estar entre 1 y 100");
+        }
     }
 
     private StudentResponse toResponse(Student student) {

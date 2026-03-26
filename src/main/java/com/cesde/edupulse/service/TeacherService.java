@@ -1,6 +1,7 @@
 package com.cesde.edupulse.service;
 
 import com.cesde.edupulse.domain.model.Teacher;
+import com.cesde.edupulse.dto.common.PageResponse;
 import com.cesde.edupulse.dto.catalog.TeacherRequest;
 import com.cesde.edupulse.dto.catalog.TeacherResponse;
 import com.cesde.edupulse.repository.AcademicLoadRepository;
@@ -10,6 +11,8 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -28,6 +31,26 @@ public class TeacherService {
         return teacherRepository.findAllByOrderByFirstNameAscLastNameAsc().stream()
                 .map(this::toResponse)
                 .toList();
+    }
+
+    @Transactional(readOnly = true)
+    public PageResponse<TeacherResponse> findPage(int page, int size) {
+        validatePagination(page, size);
+
+        Page<Teacher> teacherPage = teacherRepository
+                .findAllByOrderByFirstNameAscLastNameAsc(PageRequest.of(page, size));
+        List<TeacherResponse> items = teacherPage.getContent().stream()
+                .map(this::toResponse)
+                .toList();
+
+        return new PageResponse<>(
+                items,
+                teacherPage.getNumber(),
+                teacherPage.getSize(),
+                teacherPage.getTotalElements(),
+                teacherPage.getTotalPages(),
+                teacherPage.isFirst(),
+                teacherPage.isLast());
     }
 
     @Transactional
@@ -112,6 +135,17 @@ public class TeacherService {
 
     private String normalizeEmail(String email) {
         return email == null ? "" : email.trim().toLowerCase(Locale.ROOT);
+    }
+
+    private void validatePagination(int page, int size) {
+        if (page < 0) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "La pagina no puede ser negativa");
+        }
+
+        if (size < 1 || size > 100) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST,
+                    "El tamano de pagina debe estar entre 1 y 100");
+        }
     }
 
     private TeacherResponse toResponse(Teacher teacher) {

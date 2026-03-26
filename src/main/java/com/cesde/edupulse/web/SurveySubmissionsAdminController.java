@@ -1,10 +1,10 @@
 package com.cesde.edupulse.web;
 
+import com.cesde.edupulse.dto.common.PageResponse;
 import com.cesde.edupulse.dto.survey.SurveySubmissionDetailResponse;
 import com.cesde.edupulse.dto.survey.SurveySubmissionSummaryResponse;
 import com.cesde.edupulse.service.SurveySubmissionsAdminService;
 import java.time.LocalDate;
-import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,20 +21,24 @@ public class SurveySubmissionsAdminController {
     private final SurveySubmissionsAdminService surveySubmissionsAdminService;
 
     @GetMapping
-    public List<SurveySubmissionSummaryResponse> listSubmissions(
+    public PageResponse<SurveySubmissionSummaryResponse> listSubmissions(
             @RequestParam(required = false) Long periodId,
             @RequestParam(required = false) Long groupId,
             @RequestParam(required = false) Long levelId,
             @RequestParam(required = false) Long studentId,
             @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate submittedFromDate,
-            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate submittedToDate) {
+            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate submittedToDate,
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "20") int size) {
         return surveySubmissionsAdminService.listSubmissions(
                 periodId,
                 groupId,
                 levelId,
                 studentId,
                 submittedFromDate,
-                submittedToDate);
+                submittedToDate,
+                page,
+                size);
     }
 
     @GetMapping("/{submissionId}")

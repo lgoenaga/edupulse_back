@@ -1,5 +1,6 @@
 package com.cesde.edupulse.web;
 
+import com.cesde.edupulse.dto.common.PageResponse;
 import com.cesde.edupulse.dto.catalog.TeacherRequest;
 import com.cesde.edupulse.dto.catalog.TeacherResponse;
 import com.cesde.edupulse.service.TeacherService;
@@ -26,6 +27,13 @@ public class TeacherController {
     @GetMapping
     public List<TeacherResponse> findAll() {
         return teacherService.findAll();
+    }
+
+    @GetMapping("/paged")
+    public PageResponse<TeacherResponse> findPage(
+            @org.springframework.web.bind.annotation.RequestParam(defaultValue = "0") int page,
+            @org.springframework.web.bind.annotation.RequestParam(defaultValue = "20") int size) {
+        return teacherService.findPage(page, size);
     }
 
     @PostMapping
