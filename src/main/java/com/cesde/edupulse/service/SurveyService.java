@@ -48,18 +48,25 @@ public class SurveyService {
         public StudentContextResponse getStudentContext(String username) {
                 Student student = getStudent(username);
                 AcademicPeriod activePeriod = getActivePeriod();
+                Long studentId = Objects.requireNonNull(student.getId());
+                Long activePeriodId = Objects.requireNonNull(activePeriod.getId());
 
                 List<Question> questions = questionRepository.findByActiveTrueOrderByDisplayOrderAsc();
                 List<AcademicLoad> loads = academicLoadRepository.findByGroupIdAndPeriodIdAndActiveTrue(
-                                student.getGroup().getId(),
-                                activePeriod.getId());
+                                Objects.requireNonNull(student.getGroup().getId()),
+                                activePeriodId);
+                SurveySubmission existingSubmission = surveySubmissionRepository
+                                .findByStudentIdAndPeriodId(studentId, activePeriodId)
+                                .orElse(null);
 
                 return new StudentContextResponse(
-                                activePeriod.getId(),
+                                activePeriodId,
                                 activePeriod.getName(),
                                 student.getFullName(),
                                 student.getGroup().getName(),
                                 student.getGroup().getTechnique().getName(),
+                                existingSubmission != null,
+                                existingSubmission != null ? existingSubmission.getSubmittedAt() : null,
                                 questions.stream()
                                                 .map(question -> new StudentContextResponse.QuestionItem(
                                                                 question.getId(),

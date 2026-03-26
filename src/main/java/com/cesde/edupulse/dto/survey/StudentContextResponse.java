@@ -1,5 +1,6 @@
 package com.cesde.edupulse.dto.survey;
 
+import java.time.OffsetDateTime;
 import java.util.List;
 
 public record StudentContextResponse(
@@ -8,9 +9,10 @@ public record StudentContextResponse(
         String studentName,
         String groupName,
         String techniqueName,
+        boolean hasSubmitted,
+        OffsetDateTime submittedAt,
         List<QuestionItem> questions,
-        List<TeacherAssignmentItem> teacherAssignments
-) {
+        List<TeacherAssignmentItem> teacherAssignments) {
     public record QuestionItem(Long id, String prompt, String category, Integer displayOrder) {
     }
 
