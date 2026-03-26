@@ -8,6 +8,9 @@ import com.cesde.edupulse.dto.survey.SurveySubmissionDetailResponse;
 import com.cesde.edupulse.dto.survey.SurveySubmissionSummaryResponse;
 import com.cesde.edupulse.repository.SurveyResponseRepository;
 import com.cesde.edupulse.repository.SurveySubmissionRepository;
+import java.time.LocalDate;
+import java.time.OffsetDateTime;
+import java.time.ZoneId;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
@@ -28,9 +31,16 @@ public class SurveySubmissionsAdminService {
 
     @Transactional(readOnly = true)
     public List<SurveySubmissionSummaryResponse> listSubmissions(Long periodId, Long groupId, Long levelId,
-            Long studentId) {
-        List<SurveySubmission> submissions = surveySubmissionRepository.findAllForAdmin(periodId, groupId, levelId,
-                studentId);
+            Long studentId, LocalDate submittedFromDate, LocalDate submittedToDate) {
+        validateDateRange(submittedFromDate, submittedToDate);
+
+        List<SurveySubmission> submissions = surveySubmissionRepository.findAllForAdmin(
+                periodId,
+                groupId,
+                levelId,
+                studentId,
+                toRangeStart(submittedFromDate),
+                toRangeEndExclusive(submittedToDate));
         Map<Long, Long> responseCounts = getResponseCounts(submissions);
 
         return submissions.stream()
@@ -105,5 +115,28 @@ public class SurveySubmissionsAdminService {
                 response.getScore(),
                 response.getTeacher() != null ? response.getTeacher().getFullName() : null,
                 response.getSubject() != null ? response.getSubject().getName() : null);
+    }
+
+    private void validateDateRange(LocalDate submittedFromDate, LocalDate submittedToDate) {
+        if (submittedFromDate != null && submittedToDate != null && submittedFromDate.isAfter(submittedToDate)) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST,
+                    "La fecha inicial no puede ser posterior a la fecha final");
+        }
+    }
+
+    private OffsetDateTime toRangeStart(LocalDate submittedFromDate) {
+        if (submittedFromDate == null) {
+            return null;
+        }
+
+        return submittedFromDate.atStartOfDay(ZoneId.systemDefault()).toOffsetDateTime();
+    }
+
+    private OffsetDateTime toRangeEndExclusive(LocalDate submittedToDate) {
+        if (submittedToDate == null) {
+            return null;
+        }
+
+        return submittedToDate.plusDays(1).atStartOfDay(ZoneId.systemDefault()).toOffsetDateTime();
     }
 }

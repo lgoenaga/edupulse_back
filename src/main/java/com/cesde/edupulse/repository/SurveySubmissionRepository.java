@@ -1,6 +1,7 @@
 package com.cesde.edupulse.repository;
 
 import com.cesde.edupulse.domain.model.SurveySubmission;
+import java.time.OffsetDateTime;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -27,13 +28,17 @@ public interface SurveySubmissionRepository extends JpaRepository<SurveySubmissi
               and (:groupId is null or academicGroup.id = :groupId)
               and (:levelId is null or level.id = :levelId)
               and (:studentId is null or student.id = :studentId)
+              and (:submittedFrom is null or submission.submittedAt >= :submittedFrom)
+              and (:submittedTo is null or submission.submittedAt < :submittedTo)
             order by submission.submittedAt desc
             """)
     List<SurveySubmission> findAllForAdmin(
             @Param("periodId") Long periodId,
             @Param("groupId") Long groupId,
             @Param("levelId") Long levelId,
-            @Param("studentId") Long studentId);
+            @Param("studentId") Long studentId,
+            @Param("submittedFrom") OffsetDateTime submittedFrom,
+            @Param("submittedTo") OffsetDateTime submittedTo);
 
     @Query("""
             select submission

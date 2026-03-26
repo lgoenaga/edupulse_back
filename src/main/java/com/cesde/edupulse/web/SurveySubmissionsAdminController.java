@@ -3,8 +3,10 @@ package com.cesde.edupulse.web;
 import com.cesde.edupulse.dto.survey.SurveySubmissionDetailResponse;
 import com.cesde.edupulse.dto.survey.SurveySubmissionSummaryResponse;
 import com.cesde.edupulse.service.SurveySubmissionsAdminService;
+import java.time.LocalDate;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,8 +25,16 @@ public class SurveySubmissionsAdminController {
             @RequestParam(required = false) Long periodId,
             @RequestParam(required = false) Long groupId,
             @RequestParam(required = false) Long levelId,
-            @RequestParam(required = false) Long studentId) {
-        return surveySubmissionsAdminService.listSubmissions(periodId, groupId, levelId, studentId);
+            @RequestParam(required = false) Long studentId,
+            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate submittedFromDate,
+            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate submittedToDate) {
+        return surveySubmissionsAdminService.listSubmissions(
+                periodId,
+                groupId,
+                levelId,
+                studentId,
+                submittedFromDate,
+                submittedToDate);
     }
 
     @GetMapping("/{submissionId}")
